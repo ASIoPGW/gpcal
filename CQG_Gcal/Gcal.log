@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  27 MAR 2018 15:22
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  31 MAR 2018 13:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -26,89 +26,135 @@ File: iopart12.clo 1997/01/15 v1.0 LaTeX2e file (size option)
 \mathindent=\dimen118
 \c@eqnval=\count89
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+))
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
 No file Gcal.aux.
 \openout1 = `Gcal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 48.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 50.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 50.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 59.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 60.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 59.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 96.
+(Font)              <12> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 97.
 [1
 
 ]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 111.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 111.
 
-LaTeX Warning: Reference `Quad' on page 2 undefined on input line 126.
 
+LaTeX Warning: Reference `fig:dim' on page 2 undefined on input line 131.
+
+File: dim.eps Graphic file (type eps)
+<dim.eps>
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 127.
+(Font)              using `JT1/mc/m/n' instead on input line 146.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 127.
+(Font)              using `JY1/mc/m/n' instead on input line 146.
+
+[2]
+
+LaTeX Warning: Reference `frg:hex' on page 3 undefined on input line 157.
 
 
-Overfull \hbox (6.72615pt too wide) detected at line 133
+LaTeX Warning: Reference `Quad' on page 3 undefined on input line 157.
+
+File: Hexapole.eps Graphic file (type eps)
+<Hexapole.eps>
+Overfull \hbox (6.72615pt too wide) detected at line 173
 $ \OML/cmm/m/it/12 Ma \OT1/cmr/m/n/12 = []^^F[](\OML/cmm/m/it/12 n \OT1/cmr/m/n
 /12 + 1) [][] [] \OML/cmm/m/it/12 :$ \OT1/cmr/m/n/12 (6)
  []
 
-[2]
+[3]
 
-LaTeX Warning: Reference `pcal' on page 3 undefined on input line 162.
-
-
-LaTeX Warning: Reference `2f' on page 3 undefined on input line 162.
+LaTeX Warning: Reference `fig:IFO' on page 4 undefined on input line 202.
 
 
-LaTeX Warning: Reference `3f' on page 3 undefined on input line 162.
+LaTeX Warning: Reference `pcal' on page 4 undefined on input line 203.
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 161--163
+LaTeX Warning: Reference `2f' on page 4 undefined on input line 203.
+
+
+LaTeX Warning: Reference `3f' on page 4 undefined on input line 203.
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 201--204
 \OT1/cmr/m/n/12 In this section, we will discuss about absolute laser power cal
 ibration using
  []
 
+[4]
 
-LaTeX Warning: Reference `d' on page 3 undefined on input line 179.
-
-
-LaTeX Warning: Reference `2f' on page 3 undefined on input line 179.
+LaTeX Warning: Reference `d' on page 5 undefined on input line 220.
 
 
-LaTeX Warning: Reference `3f' on page 3 undefined on input line 179.
+LaTeX Warning: Reference `2f' on page 5 undefined on input line 220.
 
-[3] [4] (./Gcal.aux)
+
+LaTeX Warning: Reference `3f' on page 5 undefined on input line 220.
+
+File: IFO.eps Graphic file (type eps)
+<IFO.eps>
+File: peaks.eps Graphic file (type eps)
+ <peaks.eps> [5] [6] (./Gcal.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -120,12 +166,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 522 strings out of 493693
- 3775 string characters out of 6149787
- 73483 words of memory out of 5000000
- 4154 multiletter control sequences out of 15000+600000
+ 860 strings out of 493693
+ 8123 string characters out of 6149787
+ 77925 words of memory out of 5000000
+ 4468 multiletter control sequences out of 15000+600000
  13078 words of font info for 51 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 22i,10n,19p,494b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,10n,19p,494b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Gcal.dvi (4 pages, 13548 bytes).
+Output written on Gcal.dvi (6 pages, 15920 bytes).
