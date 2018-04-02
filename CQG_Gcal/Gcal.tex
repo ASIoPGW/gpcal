@@ -48,7 +48,7 @@
 
 \title[]{Absolute power calibration using gravity field and photon calibrators for gravitational wave experiment}
 
-\author{Yuki Inoue \& Sadakazu Haino}
+\author{Yuki Inoue \& Sadakazu Haino, Nobuyuki Kanda, Ogawa, Takayuki Tomaru}
 
 \address{IOP Publishing, Temple Circus, Temple Way, Bristol BS1 6HG, UK}
 \ead{iyuki@post.kek.jp}
@@ -80,29 +80,36 @@
 \section{Introduction}
 
 %Overview of GW observation
-The discovery of the gravitational wave give us the new probe for observing our universe. Advanced LIGO and Advanced Virgo have detected gravitational wave events.
+The discovery of the gravitational wave give us the new probe for observing our universe. 
+Instruments for measuring the gravitational wave must be designed for accuracy as well as precession.
+The typical strain sensitivity of 2nd generation interferometric detectors(IFO), such as Advanced LIGO and Advanced Virgo, and KAGRA, is around $10^{-23}/\sqrt{Hz}$. In order to estimate the parameters of gravitational parameters, Understanding of the systematic and statistical noise sources are critical.
+
 %Calibration
-
-%PCal history(Quote: Glasgow, Virgo, and LIGO; Table1: comparison)
-
-%Current problem of Pcal
+To reduce the systematic error of the gravitational wave reconstruction, we need to calibrate the response of IFO. LIGO and Virgo employ the photon calibrator for the calibration of time-dependent optical gain of IFO. The first generation of the photon calibrator is developed by the Grasgow.  The frequency range of photon calibrator is between 10 and 3000Hz.  However, it has a challenging issue of the absolute calibration due to the accuracy of the absolute laser power of laser standard between each country. Current uncertainty of absolute power is a few percent.
 
 %KAGRA and Our approach
-We are newly developing the gravity
+The dynamic gravity field generator is one of the candidates of the solutions. Related techniques using photon calibrator and gravity field calibrator are described as Karuki. et. al and Matone et al.
 %Chap1 is XXXXX, … .
 
 \section{Photon calibrator}
-Photon calibrator (Pcal) relies on the photon radiation pressure from the power modulated laser beams reflecting on the test mass to apply periodic force via the recoil of photons.
+Photon calibrator (Pcal) relies on the photon radiation pressure from the power modulated laser beams reflecting on the test mass to apply periodic force via the recoil of photons. 
 LIGO, Virgo and KAGRA employ the photon calibrator for the calibration of the interferometer response. The displacement of the test mass can be described as
 \begin{equation}
  x = \frac{P \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) , \label{pcal}
 \end{equation}
-where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency, $I$ is inertia, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. $s(\omega)$ is transfer function between force and displacements.  The uncertainty of displacement corresponds to uncertainty of laser power. 
+where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency, $I$ is inertia, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. $s(\omega)$ is transfer function between force and displacements. The laser power is stabilized less then design sensitivity. The stabilized laser is mounted on the transmitter module. The power is monitored by the average response of the photo detectors at the transmitter module and receiver module.  The uncertainty of displacement corresponds to uncertainty of laser power. 
 The largest uncertainty of photon calibrator is uncertainty of laser power.
 LIGO and KAGRA use the working standard to cross-calibrate the relative response of each interferometer. The uncertainty of  each  calibrator is XXXX \%. For the absolute calibration, we compare the NIST laser power standard. We send Gold standard to NIST and calibrate the response of detector. After that, we bring the gold standard to LHO and calibrate the working standard Hanford, Livingston and KAGRA. The uncertainty of laser standard of each institute of standard is XXX \%. 
 The second largest uncertainty of photon calibrator is optical efficiency of optical path. the estimated uncertainty of optical efficiency in LIGO is XXXX\%. We need to estimate the laser power response through the response of photo detector at the outside of vacuum chamber. 
 The reduction of these uncertainties are essential for the gravitational wave observation.
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Pcal.eps}
+\caption{}
+\label{fig:Pcal}
+\end{center}
+\end{figure}
 
 \begin{table}
 \begin{center}
@@ -228,8 +235,7 @@ Using Eq (\ref{d}),(\ref{2f}) and (\ref{3f}), we can calibrate the absolute leas
 \end{figure}
 
 \section{Estimation of uncertainty}
-We estimate the uncertainty of laser power. The assumed parameters are listed in Table XXX. (13)と(14)についてのエラーをモンテカルロで計算する
-
+We estimate the uncertainty of laser power. The assumed parameters are listed in Table XXX. We assumed the gaussian noise for each the parameters. We estimate the uncertainty of the laser power using Monte-Carlo simulation. The result is shown in Table XXXX. Table XXXX shows the uncertainty of  photon calibrator system based on LIGO system. By using Gcal system, we can reduce the uncertainty less than XXXX.
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{peaks.eps}
@@ -260,6 +266,9 @@ $d$&Distance[m]& 2.00\\
 \end{table}
 
 \section{Discussion}
+This method has an advantage of a direct comparison of the amplitude of injected power and gravity field. In previous study, we need to consider the uncertainty of the optical efficiency through the window and mirrors. This is because we put the working standard at the outside of the chamber. However, the compared gravity field can modulate the mirror directory.
+
+We need to pay attention to the modulation effect of the intermediate mass because the gravity field act all the mass. 
 伝達関数がキャンセルする利点こと。低い周波数だとIMの効果を入れないといけなく、伝達関数のズレがあること。反跳効果と追随効果。
 いつでも絶対キャリブレーションができること。
 窓の効果率や積分球の効果を介さず計算できること。
