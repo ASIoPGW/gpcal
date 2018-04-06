@@ -58,6 +58,7 @@
 \end{indented}
 
 \begin{abstract}
+Absolute calibration of the gravitational wave detectors are essential for understanding of source parameters of the gravitational wave source. Current limit of the uncertainty of the absolute laser calibration is XXXX \% corresponding to the absolute laser power of the photon calibrator. The photon calibrator is primary calibrator and calibrate the absolute displacement of the mirror by using the photon pressure. In order to reduce the uncertainty of photon calibrator, we propose the use of gravity field calibrator. We can modulate the mirror with a precision less than XXXX \% when we assume the basic parameter of KAGRA.
 \end{abstract}
 
 %
@@ -95,9 +96,9 @@ The dynamic gravity field generator is one of the candidates to be able to solve
 Photon calibrator (Pcal) relies on the photon radiation pressure from the power modulated laser beams reflecting on the test mass to apply periodic force via the recoil of photons. 
 LIGO, Virgo and KAGRA employ the photon calibrator for the calibration of the interferometer response. The displacement of the test mass can be described as
 \begin{equation}
- x = \frac{P \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) , \label{pcal}
+ x = \frac{P(\omega) \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) , \label{pcal}
 \end{equation}
-where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency, $I$ is inertia, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. $s(\omega)$ is transfer function between force and displacements. The laser power is stabilized less then design sensitivity. The stabilized laser is mounted on the transmitter module. The power is monitored by the average response of the photo detectors at the transmitter module and receiver module.  The uncertainty of displacement corresponds to uncertainty of laser power. 
+where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. $I=Mh^2/12+Mr^2/4$ is inertia, where $h$ and  $r$ are thickness and radius of test mass. $s(\omega)$ is transfer function between force and displacements. We can regard the $s(\omega)$ as $1/(M \omega^2)$ above 20 Hz. The laser power is stabilized less then design sensitivity. The stabilized laser is mounted on the transmitter module. The power is monitored by the average response of the photo detectors at the transmitter module and receiver module.  The uncertainty of displacement corresponds to uncertainty of laser power. 
 The largest uncertainty of photon calibrator is uncertainty of laser power.
 LIGO and KAGRA use the working standard to cross-calibrate the relative response of each interferometer. The uncertainty of  each  calibrator is 0.51 \%. For the absolute calibration, it is compared with the NIST laser power standard. We send Gold standard to NIST and calibrate the response of detector. After that, we bring the gold standard to LHO and calibrate the working standard Hanford, Livingston and KAGRA. The uncertainty of laser standard of each institute of standard is a few percent. 
 The second largest uncertainty of photon calibrator is optical efficiency of optical path. the estimated uncertainty of optical efficiency in LIGO is 0.37 \%. We need to estimate the laser power response through the response of photo detector at the outside of vacuum chamber. 
@@ -231,8 +232,8 @@ d=\frac{20}{27} \frac{V_{2f}^T}{V_{3f}^T}\frac{m_{h}}{m_{q}}\frac{r_{h}^{3}}{r_{
 Using Eq (\ref{d}),(\ref{2f}) and (\ref{3f}), we can calibrate the absolute leaser power.
 Finally, we insert the equatin (\ref{2f}) to the equation (\ref{pcal}):
 \begin{eqnarray}
-x&=&\frac{P_{2f} \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) \\
- &=&\frac{9}{8}\frac{Gm_q M r_q^2}{d^4}s(\omega), \\
+x&=&\frac{P(\omega) \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) \\
+ &=&\frac{9}{8}\frac{Gm_q M r_q^2}{d^4}s(\omega) , \\
  &=&\frac{3^{14}}{5 \times 2^8} \frac{G m^5_q r_{q}^{14}}{m^4_h r_h^{12} \omega^2} \frac{V_{3f}^4}{V_{2f}^4}.
 \end{eqnarray}
 We estimate the  relative uncertainty of  displacement
@@ -249,7 +250,18 @@ We estimate the  relative uncertainty of  displacement
 \end{figure}
 
 \section{Estimation of uncertainty}
-We estimate the uncertainty of laser power by assuming KAGRA. The assumed parameters are listed in Table XXX. We assumed the gaussian noise for each the parameters. We estimate the uncertainty of the laser power using Monte-Carlo simulation. The result is shown in Table XXXX. Table XXXX shows the uncertainty of  photon calibrator system based on LIGO system. By using Gcal system, we can reduce the uncertainty less than XXXX.
+We estimate the uncertainty of laser power by assuming KAGRA. The assumed parameters are listed in Table XXX. The estimated RMS of displacement are 
+\begin{eqnarray}
+x^{rms}_{2f}=\\
+x^{rms}_{3f}= []
+\end{eqnarray}
+The expected powers are
+\begin{eqnarray}
+P_{2f}=\\
+P_{3f}= []
+\end{eqnarray}
+The calculated $V^T_{2f}/V^{T}_{3f}$ by changing distance are shown in Fig.XXX.
+We assumed the gaussian noise for each the parameters. We estimate the uncertainty of the laser power using Monte-Carlo simulation. The result is shown in Table XXXX. Table XXXX shows the uncertainty of  photon calibrator system based on LIGO system. By using Gcal system, we can reduce the uncertainty less than XXXX.
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{peaks.eps}
@@ -262,35 +274,77 @@ We estimate the uncertainty of laser power by assuming KAGRA. The assumed parame
 \begin{center}
 \caption{\label{sus}The assumed parameters.}
 \footnotesize
-\begin{tabular}{ccc}
+\begin{tabular}{cccc}
 \br
-$G$& Gravity constant&\\
-$c$& speed of light[m/sec]&\\
-$I$& Inertia[$\mathrm{kg m^2}$]&\\
-$\theta$& Incident andgle[deg]&0.7\\
-$M$& Mass of test mass[kg]&23\\
-$m_q$&Mass of quadrupole[kg]&3.777\\
-$m_h$&Mass of hexapole[kg]& 7.404\\
-$r_q$&Radius of quadrupole[m]&0.130\\
-$r_h$&Radius of hexapole[m]& 0.060\\
-$d$&Distance[m]& 2.00\\
+&&Value&Relative uncertainty \\
+\br
+$G$& Gravity constant&6.6742&0.015 \%\\
+$c$& speed of light[m/sec]&2.99792458e8&\\
+$I$& Inertia& 0.1127[$\mathrm{kg m^2}$]& 0.6 \%\\
+$\theta$& Incident andgle&0.7[deg]& 0.07\%\\
+$M$& Mass of test mass[kg]&23 & 0.02 \%\\
+$m_q$&Mass of quadrupole[kg]&4.485 & 0.004 \%\\
+$m_h$&Mass of hexapole[kg]& 4.485 &0.004\%\\
+$r_q$&Radius of quadrupole[m]&0.200 & 0.025 \%\\
+$r_h$&Radius of hexapole[m]& 0.125 & 0.04\%\\
+$\frac{I}{M}\vec{a}\cdot \vec{b}$& Geometrical factor & &0.3 \% \\
 \br
 \end{tabular}\\
 \end{center}
 \end{table}
 
 \section{Discussion}
-This method has an advantage of a direct comparison of the amplitude of injected power and gravity field. In previous study, we need to consider the uncertainty of the optical efficiency through the window and mirrors. This is because we put the working standard at the outside of the chamber. However, the compared gravity field can modulate the mirror directory.
+This method has an advantage of a direct comparison of the amplitude of injected power and gravity field. In previous study, we need to consider the uncertainty of the optical efficiency through the window and mirrors. This is because we put the working standard at the outside of the chamber. However, the method of gravity field can compare the displacement directly. By using this method, we can calibrate the uncertainty of optical efficiency and absolute power of the laser. When we compare the laser power between each institute, we need to bring the working standard. However, we can try the absolute calibration using this method.
+As we mention about a few percent of the absolute uncertainty of laser in each country. The estimated uncertainty of the power of this method is less than 1 \%. It imply that we can make a new power standard using interferometer.
 
-We need to pay attention to the modulation effect of the intermediate mass because the gravity field act all the mass. 
-伝達関数がキャンセルする利点こと。低い周波数だとIMの効果を入れないといけなく、伝達関数のズレがあること。
-いつでも絶対キャリブレーションができること。
-窓の効果率や積分球の効果を介さず計算できること。
-r/dの数字によっては、１％の効果を考えるときにルジャンドル多項式の高次の効果を入れないといけない。有限要素法との比較。
-ローターのパラメータのオプティマイズ。
+The optimization of the parameter of the rotor is important. To reduce the uncertainty of displacement, we put the quadrupole at the outer side and hexapole at the inner side. The estimated the distance uncertainty is XXXXX. If we rep;lace the position between quadrupole and hexapole, it becomes XXX. The uncertainty of the radius propagate to the uncertainty of distance and resolution of the distance also increse.
 
-\section{Summary}
+We need to pay attention to the modulation effect of the intermediate mass because the gravity field act all the mass. We calculate the responses of the each masses using transfer function of KAGRA as shown in Fig XXX. We can neglect the intermediate mass effect and regard as free mass motion larger than XXXXX Hz. 
 
+If we consider the precision less than 1 \%, we need to consider the higher order of Legendre polynomial. This is because that higher order also has 2-f and 3-f components. These factor is mitigated by the factor of $(r/g)^n$, where $n$ is order of Legendre polynomial. Table XXX shows the higher order term. To compare the higher order effect by changing distance, we simulate the $x_{2f}$ and $x_{3f}$ using the FET method. 
+
+\begin{table}
+\begin{center}
+\caption{N=2,$\omega=n\omega_{rot}$ \label{pcal}}
+\footnotesize
+\begin{tabular}{ccccccc}
+\br
+modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
+\mr
+1f&0&0&0&0&0&0 \\
+2f&0&$9 \frac{Gmr^2}{d^4\omega^2}$&0&$\frac{25}{4} \frac{Gmr^4}{d^6\omega^2}$&0&$\frac{33075}{128} \frac{Gmr^6}{d^8\omega^2}$  \\
+3f&0&0&0&0&0&0\\
+4f&0&0&0&$\frac{175}{16} \frac{Gmr^4}{d^6\omega^2}$&0& $\frac{3675}{64} \frac{Gmr^6}{d^8\omega^2}$ \\
+5f&0&0&0&0&0&0 \\
+6f&0&0&0&0&0&$\frac{1617}{128} \frac{Gmr^6}{d^8\omega^2}$  \\
+\br
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\caption{N=3,$\omega=n\omega_{rot}$ \label{pcal}}
+\footnotesize
+\begin{tabular}{ccccccc}
+\br
+modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
+\mr
+1f&0&0&0&0&0&0 \\
+2f&0&0&0&0&0&0  \\
+3f&0&0&$15\frac{Gmr^3}{d^5\omega^2}$&0&0&$\frac{1449}{32}\frac{Gmr^5}{d^7\omega^2}$\\
+4f&0&0&0&0&0&0 \\
+5f&0&0&0&0&0&0 \\
+6f&0&0&0&0&0&$\frac{4851}{256} \frac{Gmr^6}{d^8\omega^2}$  \\
+\br
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Conclusion}
+Photon calibrator is one of the powerful calibrators in LIGO, Virgo and KAGRA. It can calibrate the response of IFO and its uncertainty is essential for estimation of gravitational wave source. In particular, the distance of the source is strongly depend on the absolute laser power of the photon calibrator. In previous study, the Gold standard, which response is calibrated by the laser power standard of NIST, is used for the absolute laser power calibration of the photon calibrator. However, current limit of the absolute laser power between each country is about XXX \%. It is directly propagate to the uncertainty of absolute displacement of gravitational wave detector.
+
+To solve the problem, we propose the combination method of photon calibrator and gravity field calibrator. 
 
 \begin{verbatim}
 
