@@ -49,8 +49,12 @@
 \title[]{Absolute calibration of gravitational wave detector using gravity field and photon pressure}
 
 \author{Yuki Inoue, Sadakazu Haino, Nobuyuki Kanda, Yujiro Ogawa, Toshikazu Suzuki, Takayuki Tomaru, Takahiro Yamamoto, Takaaki Yokozawa}
+\address{Institute of Physics, Academia Sinica, Nankang, Taipei 11529, Taiwan}
+\address{ Institute for Cosmic Ray Research, University of Tokyo, Kashiwa, Chiba, 277-8582, Japan}
+ \address{Department of Physics, Osaka City University, Sumiyoshi, Osaka 558-8585, Japan}
+ \address{KAGRA Observatory, Institute for Cosmic Ray Research, University of Tokyo, Hida, Gifu 506-1205, Japan}
+ \address{High Energy Accelerator Research Organization, Tsukuba, Ibaraki, 305-0801, Japan}
 
-\address{IOP Publishing, Temple Circus, Temple Way, Bristol BS1 6HG, UK}
 \ead{iyuki@post.kek.jp}
 \vspace{10pt}
 \begin{indented}
@@ -189,7 +193,7 @@ x=\Sigma_{i=1}^{\infty}x_{n\mathrm{f}}\cos(n\omega_{rot} t)\sim x_{2\mathrm{f}}\
 \end{equation}
 where amplitude of 2-f rotation is
 \begin{equation}
-x_{2\mathrm{f}}=\frac{9}{4}\frac{GMm_{q}r_{q}^2}{d^4}s(\omega). \label{2f}
+x_{2\mathrm{f}}=9\frac{GMm_{q}r_{q}^2}{d^4}s(\omega). \label{2f}
 \end{equation}
 
 \subsection{Displacement of test mass(Haxapole)} \label{Hexa}
@@ -206,7 +210,7 @@ x=\Sigma_{i=1}^{\infty}x_{n\mathrm{f}}\cos(n\omega_{rot} t)\sim  x_{3\mathrm{f}}
 \end{equation}
 where amplitude of 3-f is
 \begin{equation}
- x_{3\mathrm{f}}=\frac{5}{3}\frac{GMm_{h}r_{h}^3}{d^5}s(\omega). \label{3f}
+ x_{3\mathrm{f}}=15\frac{GMm_{h}r_{h}^3}{d^5}s(\omega). \label{3f}
 \end{equation}
 
 \section{Absolute power calibration by using Gcal and Pcal}
@@ -214,8 +218,8 @@ In this section, we will discuss about absolute laser power calibration using in
 Figure~\ref{fig:IFO} shows the configuration of absolute laser power calibration by using the combination of photon calibrator and gravity field calibrator.
 First, we modulate the mirror position using gravity field calibrator. We can measure the signal of $x_{2f}$ and $x_{3f}$ in the response o interferometer. Second, we send the interferometer signal to the excitation port of photon calibrator as a reference of feedback control. The photon calibrator cancel the displacement by gravity field calibrator. Third, we measure the absolute laser power at the detector of transmitter module and receiver module. The output signal of transmitter module, $V_{TxPD}$ and receiver module, $V_{RxPD}$ corresponding to displacement from gravity ffield should be modulated. By using Eq~(\ref{pcal}),(\ref{2f}), and (\ref{3f}), the modulated powers are
 \begin{eqnarray}
- P_{2f}=\frac{9}{2} \frac{Gcm_{q}Mr_{q}^2}{d^4cos\theta}\frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \label{2f} \\
- P_{3f}= \frac{10}{3} \frac{Gcm_{h}Mr_{h}^3}{d^5cos\theta}\frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \label{3f}
+ P_{2f}=18 \frac{Gcm_{q}Mr_{q}^2}{d^4cos\theta}\frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \label{2f} \\
+ P_{3f}= 30\frac{Gcm_{h}Mr_{h}^3}{d^5cos\theta}\frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \label{3f}
 \end{eqnarray}
 Fourth, we demodulate the signal of transmitter module and receiver module using the encoder signal of gravity field calibrator.
 The demodulated signals are 
@@ -227,19 +231,20 @@ V_{3f}^{R}=\rho_{R}P_{3f}
 \end{eqnarray} 
 Therefore, we can estimate the distance using measured data. 
 \begin{equation}
-d=\frac{20}{27} \frac{V_{2f}^T}{V_{3f}^T}\frac{m_{h}}{m_{q}}\frac{r_{h}^{3}}{r_{q}^{2}}=\frac{20}{27} \frac{V_{2f}^R}{V_{3f}^R}\frac{m_{h}}{m_{q}}\frac{r_{h}^{3}}{r_{q}^{2}} \label{d}
+d=\frac{5}{3} \frac{V_{2f}^T}{V_{3f}^T}\frac{m_{h}}{m_{q}}\frac{r_{h}^{3}}{r_{q}^{2}}=\frac{5}{3} \frac{V_{2f}^R}{V_{3f}^R}\frac{m_{h}}{m_{q}}\frac{r_{h}^{3}}{r_{q}^{2}} \label{d}
 \end{equation}
 Using Eq (\ref{d}),(\ref{2f}) and (\ref{3f}), we can calibrate the absolute leaser power.
 Finally, we insert the equatin (\ref{2f}) to the equation (\ref{pcal}):
 \begin{eqnarray}
 x&=&\frac{P(\omega) \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) \\
- &=&\frac{9}{8}\frac{Gm_q M r_q^2}{d^4}s(\omega) , \\
- &=&\frac{3^{14}}{5 \times 2^8} \frac{G m^5_q r_{q}^{14}}{m^4_h r_h^{12} \omega^2} \frac{V_{3f}^4}{V_{2f}^4}.
+ &=&9\frac{P(\omega)}{P_{2f}}\frac{Gm_q M r_q^2}{d^4}s(\omega) , \\
+ &=&\frac{729}{625} \frac{G m^5_q r_{q}^{14}}{m^4_h r_h^{12} \omega^2} \frac{{V_{3f}^{R}}^4}{{V_{2f}^{R}}^5}V^R(\omega) .\\
+ &=&\frac{729}{625} \frac{G m^5_q r_{q}^{14}}{m^4_h r_h^{12} \omega^2} \frac{{V_{3f}^{R}}^4}{{V_{2f}^{R}}^5}V^R_0 \cos{\omega t} .\\ 
 \end{eqnarray}
 We estimate the  relative uncertainty of  displacement
 \begin{eqnarray}
-\left( \frac{\delta x}{x} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 +4\left( \frac{\delta \omega}{\omega} \right)^2+ 25\left( \frac{\delta m_q}{m_q} \right)^2 +16\left( \frac{\delta m_h}{m_h} \right)^2 \\
-&+&16\left( \frac{\delta V_{f2}}{V_{f2}} \right)^2+16\left( \frac{\delta V_{f3}}{V_{f3}} \right)^2+ 196\left( \frac{\delta r_q}{r_q} \right)^2 +144\left( \frac{\delta r_h}{r_h} \right)^2 
+\left( \frac{\delta x}{x} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 +\left( \frac{\delta V^R_0}{V^R_0} \right)^2+4\left( \frac{\delta \omega}{\omega} \right)^2+ 25\left( \frac{\delta m_q}{m_q} \right)^2 +16\left( \frac{\delta m_h}{m_h} \right)^2 \\
+&+&25\left( \frac{\delta V^R_{f2}}{V^R_{f2}} \right)^2+16\left( \frac{\delta V^R_{f3}}{V^R_{f3}} \right)^2+ 196\left( \frac{\delta r_q}{r_q} \right)^2 +144\left( \frac{\delta r_h}{r_h} \right)^2 
 \end{eqnarray}
 \begin{figure}
 \begin{center}
@@ -261,7 +266,7 @@ P_{2f}=\\
 P_{3f}= []
 \end{eqnarray}
 The calculated $V^T_{2f}/V^{T}_{3f}$ by changing distance are shown in Fig.XXX.
-We assumed the gaussian noise for each the parameters. We estimate the uncertainty of the laser power using Monte-Carlo simulation. The result is shown in Table XXXX. Table XXXX shows the uncertainty of  photon calibrator system based on LIGO system. By using Gcal system, we can reduce the uncertainty less than XXXX.
+We assumed the gaussian noise for each the parameters. We estimate the uncertainty with Eq XXXX. Table XXXX shows the uncertainty of  photon calibrator system. The uncertainty of the quadrupole and hexapole mass is limited by the accuracy of electronic balance. In this case, we assumed that we use CG-6000. The accuracy of CG-6000 is 0.2~g. When we make the disk, we use the NC milling. Its accuracy is 0.02 mm. We can measure the dimension with three-dimension coordinate measuring machine (CMM).The precision of CMM is $2~\mathrm{\mu m}$. We can measure the position of mass accurately. By using Gcal system, we can reduce the uncertainty less than XXXX.
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{peaks.eps}
@@ -344,7 +349,7 @@ modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
 \section{Conclusion}
 Photon calibrator is one of the powerful calibrators in LIGO, Virgo and KAGRA. It can calibrate the response of IFO and its uncertainty is essential for estimation of gravitational wave source. In particular, the distance of the source is strongly depend on the absolute laser power of the photon calibrator. In previous study, the Gold standard, which response is calibrated by the laser power standard of NIST, is used for the absolute laser power calibration of the photon calibrator. However, current limit of the absolute laser power between each country is about XXX \%. It is directly propagate to the uncertainty of absolute displacement of gravitational wave detector.
 
-To solve the problem, we propose the combination method of photon calibrator and gravity field calibrator. 
+To solve the problem, we proposed the combination method of photon calibrator and gravity field calibrator. Gravity field calibrator can modulate the mirror using gravity gradient. By canceling the displacement of the test mass using the photon calibrator, we can calibrate the absolute laser power and displacement of the photon calibrator with accuracy of 0.XXX \%. Improvement of the uncertainty of absolute calibration is essential for parameter estimation.
 
 \begin{verbatim}
 
