@@ -122,7 +122,7 @@ The reduction of these uncertainties are essential for the gravitational wave ob
 & KAGRA& advanced LIGO& advanced Virgo \\
 \hline
 Mirror material & Sapphire & Silica & Silica \\
- Mirror mass & 22.8 kg & 40 kg & 40 kg \\
+ Mirror mass & 22.89 kg & 40 kg & 40 kg \\
   Mirror diameter & 220 mm & 340 mm & 350 mm \\
     Mirror thickness & 150 mm & 200 mm & 200 mm \\
  Distance of Pcal from ETM & 36 m & 8 m & 1.5 m \\
@@ -194,7 +194,7 @@ The amplitude of 2-f rotation is described as
 x_{2\mathrm{f}}=9\frac{GMm_{q}r_{q}^2}{d^4}s(\omega). \label{2f}
 \end{equation}
 
-\subsection{Displacement of test mass(Haxapole)} \label{Hexa}
+\subsection{Displacement of test mass (Haxapole)} \label{Hexa}
 We calculate the displacement of the hexapole mass distribution, which corresponds to $N=3$.
 The masses and radiuses of hexapole are assumed as $m_h$ and $r_h$. 
 The equation of motion of test mass is described as
@@ -237,7 +237,7 @@ Finally, we insert the equatin (\ref{2f}) to the Eq. (\ref{pcal}):
 x&=&\frac{P(\omega) \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) \\
  &=&9\frac{P(\omega)}{P_{2f}}\frac{Gm_q M r_q^2}{d^4}s(\omega) , \\
 % &=&\frac{729}{625} \frac{G m^5_q r_{q}^{10}}{m^4_h r_h^{12} \omega^2} \frac{{V_{3f}^{R}}^4}{{V_{2f}^{R}}^5}V^R(\omega) .\\
- &=&\frac{729}{625} \frac{G m^5_q r_{q}^{10}}{m^4_h r_h^{12} \omega^2} \frac{{V_{3f}^{R}}^4}{{V_{2f}^{R}}^5}V^R_0 \cos{\omega t} ,
+ &=&\frac{729}{625} \frac{G m^5_q r_{q}^{10}}{m^4_h r_h^{12} \omega^2} \frac{{V_{3f}^{R}}^4}{{V_{2f}^{R}}^5}V^R_0 \cos{\omega t} , \label{pcal_new}
 \end{eqnarray}
 where we assume $P(\omega)=\rho_R V^R_0 \cos {\omega t}$, and $V_0^R$ is amplitude of input voltage of the calibration line.
 \begin{figure}
@@ -260,14 +260,14 @@ We estimate the uncertainty of the displacement by assuming KAGRA basic paramete
 \hline
 &&Value&Relative uncertainty \\
 \hline
-$G$& Gravity constant&6.6742e-11&0.015 \%\\
-$c$& speed of light[m/sec]&2.99792458e8& -\\
-$\theta$& Incident andgle&0.7[deg]& 0.07\%\\
-$M$& Mass of test mass[kg]&23 & 0.02 \%\\
-$m_q$&Mass of quadrupole[kg]&4.485 & 0.004 \%\\
-$m_h$&Mass of hexapole[kg]& 4.485 &0.004\%\\
-$r_q$&Radius of quadrupole[m]&0.200 & 0.01 \%\\
-$r_h$&Radius of hexapole[m]& 0.125 & 0.02\%\\
+$G$& Gravity constant&$6.6742 \times 10^{-11}$&0.015 \%\\
+$c$& speed of light&$2.99792458 \times 10^8$ [m/sec]& -\\
+$\cos{\theta}$& Incident angle&$\cos{0.7[deg]}$& 0.07\%\\
+$M$& Mass of test mass&22.89 [kg] & 0.02 \%\\
+$m_q$&Mass of quadrupole&4.485[kg] & 0.004 \%\\
+$m_h$&Mass of hexapole& 4.485[kg] &0.004\%\\
+$r_q$&Radius of quadrupole&0.200[m] & 0.01 \%\\
+$r_h$&Radius of hexapole& 0.125[m] & 0.02\%\\
 $1+\frac{I}{M}\vec{a}\cdot \vec{b}$& Geometrical factor & 1&0.3 \% \\
 \hline
 \end{tabular}\\
@@ -275,22 +275,22 @@ $1+\frac{I}{M}\vec{a}\cdot \vec{b}$& Geometrical factor & 1&0.3 \% \\
 \end{table}
 
 \subsection{Systematic error of the higher order term}
-In order to achieve the precision less than 1 \%, we need to consider the operation position due to the higher order of Legendre polynomial. This is because that higher order also include the 2-f and 3-f components. The order of the Legendre polynomial is characterized by n as shown in Eq.(\ref{eq:EOM}). The effect of higher order factor is mitigated by the factor of $(r/d)^n$. Table~\ref{tab:N2} and \ref{tab:N3} shows the calculated displacement of the higher order term. To compare the higher order effect, we calculate the ratio between the FEM and calculation by changing the r/d is shown in Fig~\ref{fig:FEM}. We need to place the mirror at least 2m away from the mirror to reduce the systematic error. In the following calculation, we assume the distance as 2m. 
+In order to achieve the precision less than 1 \%, we need to consider the operation position due to the higher order of Legendre polynomial. This is because that higher order also include the 2-f and 3-f components. The order of the Legendre polynomial is characterized by n as shown in Eq.(\ref{eq:EOM}). The effect of higher order factor is mitigated by the factor of $(r/d)^n$. Table~\ref{tab:N2} and \ref{tab:N3} shows the calculated displacement of the higher order term. To compare the higher order effect, we calculate the ratio between the FEM and calculation by changing the r/d is shown in Fig~\ref{fig:FEM}. We need to place the mirror at least 2m away from the mirror to reduce the systematic error. In the following calculation, we assume the distance as 2~m. 
 
 \begin{table}
 \begin{center}
 \caption{The calculated quadrupole($N=2$) displacement. $n$ is order of Legendre polynomial, where $\omega=n\omega_{rot}$. \label{tab:N2}}
 \footnotesize
-\begin{tabular}{ccccccc}
+\begin{tabular}{cccccccc}
 \hline
-modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
+modulation& n=1 & n=2& n=3 &n=4&n=5&n=6&n=7 \\
 \hline
-1f&0&0&0&0&0&0 \\
-2f&0&$9 \frac{Gmr^2}{d^4\omega^2}$&0&$\frac{25}{4} \frac{Gmr^4}{d^6\omega^2}$&0&$\frac{735}{128} \frac{Gmr^6}{d^8\omega^2}$  \\
-3f&0&0&0&0&0&0\\
-4f&0&0&0&$\frac{175}{16} \frac{Gmr^4}{d^6\omega^2}$&0& $\frac{441}{64} \frac{Gmr^6}{d^8\omega^2}$ \\
-5f&0&0&0&0&0&0 \\
-6f&0&0&0&0&0&$\frac{1617}{128} \frac{Gmr^6}{d^8\omega^2}$  \\
+1f&0&0&0&0&0&0&0 \\
+2f&0&$9 \frac{Gmr^2}{d^4\omega^2}$&0&$\frac{25}{4} \frac{Gmr^4}{d^6\omega^2}$&0&$\frac{735}{128} \frac{Gmr^6}{d^8\omega^2}$&0  \\
+3f&0&0&0&0&0&0&0\\
+4f&0&0&0&$\frac{175}{16} \frac{Gmr^4}{d^6\omega^2}$&0& $\frac{441}{64} \frac{Gmr^6}{d^8\omega^2}$&0 \\
+5f&0&0&0&0&0&0&0 \\
+6f&0&0&0&0&0&$\frac{1617}{128} \frac{Gmr^6}{d^8\omega^2}$&0  \\
 \hline
 \end{tabular}
 \end{center}
@@ -300,16 +300,16 @@ modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
 \begin{center}
 \caption{The calculated hexapole($N=3$) displacement. $n$ is order of Legendre polynomial, where $\omega=n\omega_{rot}$.  \label{tab:N3}}
 \footnotesize
-\begin{tabular}{ccccccc}
+\begin{tabular}{cccccccc}
 \hline
-modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
+modulation& n=1 & n=2& n=3 &n=4&n=5&n=6&n=7 \\
 \hline
-1f&0&0&0&0&0&0 \\
-2f&0&0&0&0&0&0  \\
-3f&0&0&$15\frac{Gmr^3}{d^5\omega^2}$&0&$\frac{315}{32}\frac{Gmr^5}{d^7\omega^2}$&0\\
-4f&0&0&0&0&0&0 \\
-5f&0&0&0&0&0&0 \\
-6f&0&0&0&0&0&$\frac{4851}{256} \frac{Gmr^6}{d^8\omega^2}$  \\
+1f&0&0&0&0&0&0&0 \\
+2f&0&0&0&0&0&0&0  \\
+3f&0&0&$15\frac{Gmr^3}{d^5\omega^2}$&0&$\frac{315}{32}\frac{Gmr^5}{d^7\omega^2}$&0&\\
+4f&0&0&0&0&0&0&0 \\
+5f&0&0&0&0&0&0&0 \\
+6f&0&0&0&0&0&$\frac{4851}{256} \frac{Gmr^6}{d^8\omega^2}$&0  \\
 \hline
 \end{tabular}
 \end{center}
@@ -325,7 +325,15 @@ modulation& n=1 & n=2& n=3 &n=4&n=5&n=6 \\
 
 
 \subsection{Systematic error of the transfer function}
-The gravity field calibrator modulate the mirrors with gradient of gravity potential. However, its gravity gradient act the mass of multi pendulum. We estimated the responses of the each masses using transfer function of KAGRA as shown in Fig.~\ref{fig:ratio}. We can neglect the intermediate mass effect and regard as free mass motion larger than 30 Hz. We assumed the rotation frequency as 16 Hz, which is corresponding to 32 Hz and 48Hz at the operation frequency. of 2-f and 3-f components.  
+The gravity field calibrator can modulate the mirrors with gradient of gravity potential. However, its gravity gradient act the masses of suspension system as shown in Fig.~\ref{fig:cryo}. We simulated the transfer function between each mass and test mass. When we calculate the transfer function, we used a code of SUMCOM based on mathematica. We estimated the total displacement including all the masses. Figure \ref{fig:ratio} shows the displacement ratio between the sensed motion and free mass motion as a function of frequency The structures of low frequency are corresponding to the resonant peak of the suspension system. We can neglect the intermediate mass effect and regard as free mass motion larger than 10 Hz. We assumed the rotation frequency as 16 Hz, which is corresponding to 32 Hz and 48Hz at the operation frequency. of 2-f and 3-f components.  We used this assumption in the following section.
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Cryo.eps}
+\caption{Schematic view of the suspension system. The parameter of the hight and mass is the assumed value. }
+\label{fig:cryo}
+\end{center}
+\end{figure}
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{dx_Gcal_ratio.eps}
@@ -336,22 +344,28 @@ The gravity field calibrator modulate the mirrors with gradient of gravity poten
 
 
 \subsection{Uncertainty of displacement and  laser power}
+In this section, we estimate the typical displacement based on the Table.~\ref{sus}. 
  The estimated displacements of 2f and 3f are described as
 \begin{eqnarray}
 x^{rms}_{2f}&=&1.178 \times 10^{-16}\mathrm{[m]} \times \left( \frac{G}{6.6742 \times 10^{-11} \mathrm{[m^3kg^{-1}sec^{-2}]}} \right) \times \left( \frac{m_q}{4.485 \mathrm{[kg]}} \right) \times \left( \frac{r_q}{0.200 \mathrm{[m]}} \right)^2 \nonumber \\
  &&\times \left( \frac{2\mathrm{[m]}}{d} \right)^4 \times \left( \frac{2\pi(2\times 16)\mathrm{[Hz]}}{\omega} \right)^2\\
 x^{rms}_{3f}&=&2.130 \times 10^{-18}\mathrm{[m]} \times \left( \frac{G}{6.6742 \times 10^{-11} \mathrm{[m^3kg^{-1}sec^{-2}]}} \right) \times \left( \frac{m_h}{4.485 \mathrm{[kg]}} \right) \times \left( \frac{r_h}{0.125 \mathrm{[m]}} \right)^3 \nonumber \\
- &&\times \left( \frac{2\mathrm{[m]}}{d} \right)^5 \times \left( \frac{2\pi(3\times 16)\mathrm{[Hz]}}{\omega} \right)^2,
+ &&\times \left( \frac{2\mathrm{[m]}}{d} \right)^5 \times \left( \frac{2\pi(3\times 16)\mathrm{[Hz]}}{\omega} \right)^2.
 \end{eqnarray}
-where the estimated value should correspond to the laser power for cancelation. 
-The estimated powers are
+This displacement is much higher than the sensitivity of KAGRA. 
+By using this result, we estimate the signal to noise ratio of the peaks.
+\begin{eqnarray}
+SNR_{2f}=392 \times \left(\frac{3.0 \times 10^{-19} \mathrm{m/\sqrt{Hz}}}{n} \right) \times \left(\frac{T}{1 [\mathrm{sec}]} \right)^{1/2} \times \left(\frac{x_{2f}^{rms}}{1.178 \times 10^{-16}[m] }  \right)   \\
+SNR_{3f}=73 \times \left(\frac{2.9 \times 10^{-20} \mathrm{m/\sqrt{Hz}}}{n} \right) \times \left(\frac{T}{1 [\mathrm{sec}]} \right)^{1/2} \times \left(\frac{x_{2f}^{rms}}{2.130 \times 10^{-18}[m] } \right)   \\
+\end{eqnarray}
+We can apply this system for the measurement of the absolute laser power. The estimated powers are
 \begin{eqnarray}
 P_{2f}&=&0.09288 ~\mathrm{[W]}\times \left( \frac{G}{6.6742 \times 10^{-11} \mathrm{[m^3kg^{-1}sec^{-2}]}} \right)\times \left( \frac{c}{2.99792458 \times 10^{8} \mathrm{[m sec^{-1}]}} \right) \nonumber \\
 && \times \left( \frac{m_q}{4.485 \mathrm{[kg]}} \right) \times \left( \frac{r_q}{0.200 \mathrm{[m]}} \right)^2 \times \left( \frac{2\mathrm{[m]}}{d} \right)^4 \times \left( \frac{1}{\cos{\theta}} \right) \times \left( \frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \right)^2\\
 P_{3f}&=&0.003779~\mathrm{[W]} \times \left( \frac{G}{6.6742 \times 10^{-11} \mathrm{[m^3kg^{-1}sec^{-2}]}} \right)\times \left( \frac{c}{2.99792458 \times 10^{8} \mathrm{[m sec^{-1}]}} \right) \nonumber \\
 && \times \left( \frac{m_h}{4.485 \mathrm{[kg]}} \right) \times \left( \frac{r_h}{0.125 \mathrm{[m]}} \right)^3 \times \left( \frac{2\mathrm{[m]}}{d} \right)^5 \times \left( \frac{1}{\cos{\theta}} \right) \times \left( \frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \right)^2.
 \end{eqnarray}
-The ratio of the powers corresponds to $V^T_{2f}/V^{T}_{3f}$ and is proportional to the distance. The estimated $V^T_{2f}/V^{T}_{3f}$ by changing distance are shown in Fig.~\ref{fig:dvsVV}.
+The estimated $V^T_{2f}/V^{T}_{3f}$ by changing distance are shown in Fig.~\ref{fig:dvsVV}.
 
 \begin{figure}
 \begin{center}
@@ -363,14 +377,13 @@ The ratio of the powers corresponds to $V^T_{2f}/V^{T}_{3f}$ and is proportional
 The uncertainty of the quadrupole and hexapole masses are limited by the accuracy of electronic balance. In this case, we use the weight made of Tungsten. The density of Tungsten is $19.25~\mathrm{g/cm^3}$. The diameter and thickness of mass are 0.06m and 0.08~m, respectively. Therefore, the mass of the rotor mass is 4.485~kg. To measure this mass, we assumed that we use an electronic balance whose catalog number and accuracy are CG-6000 and 0.2~g, respectively. Therefore, the relative uncertainty of the mass of rotor mass is 0.04~\%.
 
  To make the rotor disk, we use the NC milling machine. The typical accuracy is less than 0.02 mm. For the measuring of the shape, we employ the three-dimension coordinate measuring machine (CMM)~\cite{Inoue:2016kyq}. The precision of CMM is $2~\mathrm{\mu m}$. We can measure the shape of the rotor and masses with enough of uncertainty using CMM. 
- 以下、各数字についての妥当性を測定方法とともに考察。
- 
+
  The estimated relative uncertainty of  displacement is written as
 \begin{eqnarray}
 \left( \frac{\delta x}{x} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 +\left( \frac{\delta V^R_0}{V^R_0} \right)^2+4\left( \frac{\delta \omega}{\omega} \right)^2+ 25\left( \frac{\delta m_q}{m_q} \right)^2 +16\left( \frac{\delta m_h}{m_h} \right)^2 \nonumber \\
 &+&25\left( \frac{\delta V^R_{f2}}{V^R_{f2}} \right)^2+16\left( \frac{\delta V^R_{f3}}{V^R_{f3}} \right)^2+ 100\left( \frac{\delta r_q}{r_q} \right)^2 +144\left( \frac{\delta r_h}{r_h} \right)^2.
 \end{eqnarray}
-As you can see, the contribution of the radius uncertainty is amplified by theO(100) factor. To reduce the noise of displacement, we need to reduce the uncertainty of the shape of the rotor and masses.
+The contribution of the radius uncertainty is amplified by the O(100) factor. To reduce the noise of displacement, we need to reduce the uncertainty of the shape of the rotor and masses.
 The uncertainty of the $V^R_{2f}$,$V^R_{3f}$, $V^R_{0}$ are much less than other contributions.We can reduce the uncertainty of these values with long time integration time due to the statistics. Each the uncertainty is listed in Table.~\ref{sus}. The estimated  total uncertainty of the displacement is 0.3 \%.
 
 We can also estimate the laser power by using the following equations:
