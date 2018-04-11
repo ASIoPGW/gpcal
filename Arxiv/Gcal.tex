@@ -60,7 +60,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{abstract}
-Absolute calibration of the gravitational wave detectors are an essential to understand the source parameters of the gravitational wave source. The photon calibrator is primary calibrator for calibrating the absolute displacement of the mirror by using the photon pressure. Current limit of the absolute calibration uncertainty is 3 \% corresponding to the uncertainty of the absolute laser power measured by standard institute.  In order to reduce the uncertainty of the photon calibrator, we propose a use of the gravity field calibrator. The gravity field calibrator can modulate the mirror using the gravity gradient. However, uncertainty of the distance between the test mass and calibrator is one of the serious systematic error of the absolute calibration. To cancel the uncertainty of the distance between mirror and calibrator, we newly propose a use of quadrupole and hexapole mass distribution. This method can be estimated as the distance with ratio of the quadruple and hexapole response. We also estimated the uncertainty of this method. We considered the systemetic error of transfer function and higher order effect of the multipole moment. The estimated precision of absolute calibration is 0.3\%, which is 10 times less than that of previous method.
+Absolute calibration of the gravitational wave detectors is an essential to evaluate the various parameters of the gravitational wave sources. The photon calibrator is primary calibrator for calibrating the absolute displacement of the mirror by using the photon pressure. Current technological limit of the absolute calibration uncertainty are 3 \% corresponding to the uncertainty of the absolute laser power measured by standard institute.  In order to reduce the uncertainty of the photon calibrator, we propose a new method using the combination of photon calibrator and gravity field calibrator. The gravity field calibrator gives the modulation to mirror using the gravity gradient. In previous study, uncertainty of the distance between the test mass and gravity field calibrator is one of the serious systematic error of the absolute calibration. To cancel this uncertainty, we newly propose a use of quadrupole and hexapole mass distribution.  We also estimated the uncertainty of this method. The estimated precision of absolute calibration is 0.3\%, which is 10 times less than that of previous method.
 
 \end{abstract}
 
@@ -72,15 +72,16 @@ Absolute calibration of the gravitational wave detectors are an essential to und
 \section{Introduction}
 
 %Overview of GW observation
-The discovery of the gravitational wave gave us the new probe for observing our universe~\cite{PhysRevLett.116.061102}. 
-Instruments for measuring the gravitational wave must be designed for sensitivity as well as precision.
-The typical strain sensitivity of 2nd generation interferometric detectors (IFO), such as Advanced LIGO~\cite{}, Advanced Virgo~\cite{0264-9381-32-2-024001}, and KAGRA~\cite{0264-9381-29-12-124007, PhysRevD.88.043007}, are around $10^{-23}/\sqrt{Hz}$. In order to estimate the parameters of gravitational waves, such as masses, spins, redshift and distance, understanding of the systematic and statistical noise sources are critical.
-
-%Hubble constant
-In particular, the uncertainty of the absolute calibration is directly propagate to the estimation error of the distance of the Compact Binary Coalescence. By applying the Neutron star - Neutron star binary and follow up observation, it can give us the new probe for estimation of the Hubble constant.
+The discovery of the gravitational wave (GW) gave us the new probe for observing our universe~\cite{PhysRevLett.116.061102}. 
+The typical strain sensitivity of 2nd generation interferometric detectors (IFO), such as Advanced LIGO~\cite{}, Advanced Virgo~\cite{0264-9381-32-2-024001}, and KAGRA~\cite{0264-9381-29-12-124007, PhysRevD.88.043007}, are around $10^{-23}/\sqrt{Hz}$ at 100 Hz. In order to estimate the parameters of gravitational waves, such as masses, spins, redshift and distance, understanding of the systematic and statistical noise sources are critical.
+In particular, the uncertainty of the absolute calibration is directly propagate to the estimation error of the distance of the GW sources. The multi messenger observations of the binary neutron star, GW170817, open the new method to estimate the Hubble constant. The accuracy of estimation the constant is proportional to the systematic uncertainties of source distance. 
+To understand the origin of heavier binary black hole, we need to obtain the precise mass and distance distribution.(この話も書くとabsolute calibrationの重要性がわかりやすくなると思います。横澤が書いてもいいのですが、神田先生に頼むのが妥当だと思います。)
+So, the improvement of absolute calibration is one of the important topic for the future gravitational wave astronomy.
 
 %Calibration
-To reduce the systematic errors of the gravitational wave calibration and reconstruction, we need to calibrate the response of IFO. The first generation of the photon calibrator is developed by the Glasgow. They proposed the modulation method with photon pressure for understanding the response of interferometer. LIGO employ the second generation photon calibrator for the calibration of time-dependent response of IFO~\cite{doi:10.1063/1.4967303}.  However, it has a challenging issue of the absolute calibration due to the accuracy of the absolute laser power of laser standard between each country. Current uncertainty by measuring in the each standard institute of each country is a few percent.
+ここの前に、5行くらいで、h(t) reconstructionの話を書くと後の話につながりやすいと思います。
+error信号とfeedback信号からh(t)を再構成する。各種干渉系の伝達関数を測定する。その時間変化はcalibration lineから追う。モデルで追いきれなかったresidualがsystematic uncertaintyになる。
+To reduce the calibration systematic uncertainty, we need to inject well parameterized continuous sine(calibration line) by photon calibrator or other calibration source and monitoring the time variation of the response of IFO. The first generation of the photon calibrator is developed by the Glasgow. They proposed the modulation method with photon pressure for understanding the response of interferometer. LIGO employ the second generation photon calibrator for the calibration of time-dependent response of IFO~\cite{doi:10.1063/1.4967303}.  However, it has a challenging issue of the absolute calibration due to the accuracy of the absolute laser power of laser standard between each country. Current uncertainty by measuring in the each standard institute of each country is a few percent.
 
 %KAGRA and Our approach
 The dynamic gravity field generator is one of the candidates to be able to solve the uncertainty problem of absolute calibration. The technologies of the system are established and tested in University of Tokyo and Rome group. Related techniques using gravity field calibrator for the calibration are discussed in Matone et al \cite{0264-9381-24-9-005}. It can modulate the test mass using gravity gradient with rotor. The amplitude of displacement of the mirror is determined by masses, distance, frequency, radius, and Gravity constant. 
@@ -94,11 +95,11 @@ In section \ref{sec:PGCAL}, we show how to calibrate the absolute displacement w
 Photon calibrator (Pcal) relies on the photon radiation pressure from the power modulated laser beams reflecting on the test mass to apply periodic force via the recoil of photons~\cite{doi:10.1063/1.4967303}. 
 LIGO, Virgo and KAGRA employ the photon calibrator for the calibration of the interferometer response~\cite{0264-9381-34-1-015002}. Each gravitational detectors placed the 1047~nm laser around the end test mass. The displacement of the test mass can be described as
 \begin{equation}
- x = \frac{P(\omega) \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) , \label{pcal}
+ x = \frac{P \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) , \label{pcal}
 \end{equation}
-where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. $I=Mh^2/12+Mr^2/4$ is inertia, where $h$ and  $r$ are thickness and radius of test mass. $s(\omega)$ is transfer function between force and displacements. We can regard the $s(\omega)$ as $1/(M \omega^2)$ above 20 Hz. 
+where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency of the laser power modulation, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. the schematic view is shown in Fig.~\ref{fig:Pcal}. $I=Mh^2/12+Mr^2/4$ is inertia, where $h$ and  $r$ are thickness and radius of test mass. $s(\omega)$ is transfer function between force and displacements. We can regard the $s(\omega)$ as $1/(M \omega^2)$ above 20 Hz. 
 
-The laser power is stabilized less then design sensitivity. The schematic vier of the photon calibrator is shown in Fig.~\ref{fig:Pcal}. The stabilized laser is mounted on the transmitter module. The power is monitored by the response of the photo detectors at the transmitter module and receiver module.  The uncertainty of displacement corresponds to uncertainty of laser power. 
+The laser power is stabilized less then design sensitivity. The schematic vier of the photon calibrator is shown in Fig.~\ref{fig:Pcal}. The stabilized laser is mounted on the transmitter module. The power is monitored by the response of the photo detectors at the transmitter module and receiver module.  
 The largest relative uncertainty of photon calibrator is that of laser power.
 LIGO and KAGRA use the working standard to cross-calibrate the relative response of each interferometer. The relative uncertainty of  each  calibrator is 0.51 \%~\cite{doi:10.1063/1.4967303}. 
 The second largest relative uncertainty of photon calibrator is optical efficiency of optical path. We calibrate the injected power from outside of the vacuum chamber. We need to estimate the laser power response through the response of photo detector at the outside of vacuum chamber. The measured uncertainty of optical efficiency in LIGO is 0.37 \%. 
@@ -148,7 +149,7 @@ We rotate the disk at the angular frequency of $\omega_{rot}=2\pi f_{rot}$.
 \label{fig:dim}
 \end{center}
 \end{figure}
-
+First we calculate the distance with N pieces of weight which are separated by radius of r from the center of the rotor mass and arranged at equal intervals, respectively.
 Distance between i-th mass and center of test mass is written as
 \begin{equation}
 L_i=d \sqrt{1+\left( \frac{r}{d} \right)^2 -2\left( \frac{r}{d} \right) \cos{\phi_i} },
@@ -157,13 +158,16 @@ where the angle of i-th mass is assumed as $\phi_i=\omega_{rot} t + 2\pi i/N$.
 The gravity potential at the center of test mass can be described as
 \begin{eqnarray}
 V &=& \Sigma^N_{i=0} V_i \\
+&=& -GM \Sigma^N_{i=0}\frac{m}{L_i}\\
 &=&-\frac{GMm}{d} \Sigma^N_{i=0} \Sigma^{\infty}_{n=0} \left( \frac{r}{d} \right)^n P_n\left(\cos{\left(\omega_{rot} t +\frac{2 \pi i}{N}\right)}\right),
 \end{eqnarray}
 where $P_n$ is Legendre polynomial. The equation of motion of test mass is 
 \begin{equation}
 Ma=\left| \frac{\partial V}{\partial{d}} \right| =\frac{GMm}{d^2}\Sigma^N_{i=0} \Sigma^{\infty}_{n=0}(n+1) \left( \frac{r}{d} \right)^n P_n\left(\cos{\left(\omega_{rot} t +\frac{2 \pi i}{N}\right)}\right),
 \end{equation}
-where $a$ is acceleration of test mass. We place the quadrupole and hexapole masses in the same rotor as shown in Fig.~\ref{fig:hex}. We put the hole between each mass. The hole can increase the gravity gradient twice effectively. Therefore, we can describe the equation of motion as 
+where $a$ is acceleration of test mass. 
+
+We place the quadrupole and hexapole masses in the same rotor as shown in Fig.~\ref{fig:hex}. We put the hole between each mass. The hole can increase the gravity gradient twice effectively. Therefore, we can describe the equation of motion as 
 \begin{equation}
 Ma=\left| \frac{\partial V}{\partial{d}} \right| =\frac{2GMm}{d^2}\Sigma^N_{i=0} \Sigma^{\infty}_{n=0}(n+1) \left( \frac{r}{d} \right)^n P_n\left(\cos{\left(\omega_{rot} t +\frac{2 \pi i}{N}\right)}\right). \label{eq:EOM}
 \end{equation}
@@ -306,7 +310,7 @@ modulation& n=1 & n=2& n=3 &n=4&n=5&n=6&n=7 \\
 \hline
 1f&0&0&0&0&0&0&0 \\
 2f&0&0&0&0&0&0&0  \\
-3f&0&0&$15\frac{Gmr^3}{d^5\omega^2}$&0&$\frac{315}{32}\frac{Gmr^5}{d^7\omega^2}$&0&\\
+3f&0&0&$15\frac{Gmr^3}{d^5\omega^2}$&0&$\frac{315}{32}\frac{Gmr^5}{d^7\omega^2}$&0& $\frac{189}{64} \frac{Gmr^7}{d^9 \omega^2}$\\
 4f&0&0&0&0&0&0&0 \\
 5f&0&0&0&0&0&0&0 \\
 6f&0&0&0&0&0&$\frac{4851}{256} \frac{Gmr^6}{d^8\omega^2}$&0  \\
