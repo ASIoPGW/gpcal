@@ -32,13 +32,14 @@
 %  can be indicated with a superscript in italics, 
 %  which is easily obtained with \supit{}.
 
-\author{Yuki Inoue\supit{a,b}, Sadakazu Haino\supit{a}, Nobuyuki Kanda\supit{c}, Yujiro Ogawa\supit{b}, Toshikazu Suzuki\supit{d}, Takayuki Tomaru\supit{b}, Takahiro Yamamoto\supit{e}, Takaaki Yokozawa\supit{e}
+\author{Yuki Inoue\supit{a,b}, Sadakazu Haino\supit{a}, Nobuyuki Kanda\supit{c}, Yujiro Ogawa\supit{b.d}, Toshikazu Suzuki\supit{b,e}, Takayuki Tomaru\supit{b,d,e}, Takahiro Yamamoto\supit{f}, Takaaki Yokozawa\supit{f}
 \skiplinehalf
 \supit{a}Institute of Physics, Academia Sinica, Nankang, Taipei 11529, Taiwan; \\
 \supit{b}High Energy Accelerator Research Organization, Tsukuba, Ibaraki, 305-0801, Japan;\\
 \supit{c}Department of Physics, Osaka City University, Sumiyoshi, Osaka 558-8585, Japan;\\
-\supit{d}Institute for Cosmic Ray Research, University of Tokyo, Kashiwa, Chiba, 277-8582, Japan;\\
-\supit{e}KAGRA Observatory, Institute for Cosmic Ray Research, University of Tokyo, Hida, Gifu 506-1205, Japan;\\
+\supit{d}SOKENDAI (The Graduate University for Advanced Studies), Hayama, Miura District, Kanagawa 240-0115, Japan;\\
+\supit{e}Institute for Cosmic Ray Research, University of Tokyo, Kashiwa, Chiba, 277-8582, Japan;\\
+\supit{f}KAGRA Observatory, Institute for Cosmic Ray Research, University of Tokyo, Hida, Gifu 506-1205, Japan;\\
 }
 
 %>>>> Further information about the authors, other than their 
@@ -55,12 +56,14 @@
 %>>>> uncomment following to start page numbering at 301 
 %\setcounter{page}{301} 
  
-  \begin{document} 
-  \maketitle 
+\begin{document} 
+\maketitle 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{abstract}
-Absolute calibration of the gravitational wave detectors is an essential to evaluate the various parameters of the gravitational wave sources. The photon calibrator is primary calibrator for calibrating the absolute displacement of the mirror by using the photon pressure. Current technological limit of the absolute calibration uncertainty is 3.5 \% corresponding to the uncertainty of the laser power standard of the standard metrology institutes from nine country.  In order to reduce the uncertainty of the photon calibrator, we propose a new method using the combination of photon calibrator and gravity field calibrator. The gravity field calibrator gives the modulation to mirror using the gravity gradient. In previous study, uncertainty of the distance between the test mass and gravity field calibrator is one of the serious systematic error of the absolute calibration. To cancel this uncertainty, we newly propose a use of quadrupole and hexapole mass distribution.  We also estimated the uncertainty of this method. The estimated precision of absolute calibration is 0.3\%, which is 10 times less than that of previous method.
+Absolute calibration of the gravitational wave detectors is an essential to evaluate the various parameters of the gravitational wave sources. 
+The photon calibrator is primary calibrator for calibrating the absolute displacement of the mirror by using the photon pressure. 
+Current technological limit of the absolute calibration uncertainty is 3.5 \% corresponding to the uncertainty of the laser power standard of the standard metrology institutes from nine country.  In order to reduce the uncertainty of the photon calibrator, we propose a new method using the combination of photon calibrator and gravity field calibrator. The gravity field calibrator gives the modulation to mirror using the gravity gradient. In previous study, uncertainty of the distance between the test mass and gravity field calibrator is one of the serious systematic error of the absolute calibration. To cancel this uncertainty, we newly propose the method of quadrupole and hexapole mass distribution.  We also estimated the uncertainty of this method. The estimated precision of absolute calibration is 0.3\%, which is 10 times less than that of previous method.
 
 \end{abstract}
 
@@ -73,19 +76,51 @@ Absolute calibration of the gravitational wave detectors is an essential to eval
 
 %Overview of GW observation
 The discovery of the gravitational wave (GW) gave us the new probe for observing our universe~\cite{PhysRevLett.116.061102}. 
-The typical strain sensitivity of 2nd generation interferometric detectors (IFO), such as Advanced LIGO~\cite{}, Advanced Virgo~\cite{0264-9381-32-2-024001}, and KAGRA~\cite{0264-9381-29-12-124007, PhysRevD.88.043007}, are around $10^{-23}/\sqrt{Hz}$ at 100 Hz. In order to estimate the parameters of gravitational waves, such as masses, spins, redshift and distance, understanding of the systematic and statistical noise sources are critical.
-In particular, the uncertainty of the absolute calibration directly propagate to the estimation error of the distance of the GW sources. The multi messenger observations of the binary neutron star, GW170817, open the new method to estimate the Hubble constant. The accuracy of estimation of the constant is proportional to the systematic uncertainties of source distance. 
+The typical strain sensitivity, $h$, of 2nd generation interferometric detectors (IFO), such as Advanced LIGO~\cite{0264-9381-32-7-074001}, Advanced Virgo~\cite{0264-9381-32-2-024001}, and KAGRA~\cite{0264-9381-29-12-124007, PhysRevD.88.043007}, are around $10^{-23}/\sqrt{Hz}$ at 100 Hz. 
+% Added by SH 180412
+By using the GW signals from compact binary coalescences, we can derive 
+the parameters such as masses, spins, luminosity distance, orbital inclination 
+and the sky location of the binary system from the detected waveforms. 
+The precision of the derived parameters are potentially limited by the 
+calibration accuracy. As the number of detected sources increases and we 
+detect higher signal-to-noise ratio (SNR) events, the calibration uncertainty 
+will become the dominant source of the errors to extract physics information. 
+In particular, the uncertainty on the absolute GW signal amplitude directly 
+propagates to the error on the estimation of the distance to the sources. 
+The detection of GW signal from a Binary Neutron Star (BNS) system, 
+GW170817~\cite{GW170817:2017aa} in both GW and Electro-Magnetic (EM) 
+waves opened a new era of multi-messenger astronomy. These observations 
+allow us to use GW170817 as a standard 
+siren~\cite{Abbott:2017xzu,Schutz_1986,Holz_2005,Nissanke_2010} to 
+determine the absolute luminosity distance to the source directly from the 
+GW signal measurements. Assuming the event rate of 3000 Gpc$^{-3}$yr$^{-1}$ 
+which is consistent with the bounds from GW170817 at 90\% 
+confidence~\cite{GW170817:2017aa}, we expect to detect GW signals from about 
+50 BNS standard sirens in the next few observing runs. 
+They can constrain the Hubble constant ($H_0$) 
+measurement to 2\% or less~\cite{Feeney:2018mkj}, and eventually resolve 
+the 3-$\sigma$ tension of the $H_0$ measurement between Cephied-SN distance 
+ladder~\cite{Riess_2016} and CMB data assuming a $\Lambda$CDM 
+model.~\cite{2016-planck} The systematic errors on the calibration of 
+the absolute GW signal amplitude must be suppressed at the sub-\% level to 
+achieve the high precision $H_0$ measurement with the GW standard sirens.
+
+% Commented out by SH 180412
+%In order to estimate the parameters of gravitational waves, such as masses, spins, redshift and distance, understanding of the systematic and statistical noise sources are critical.
+%In particular, the uncertainty of the absolute calibration directly propagate to the estimation error of the distance of the GW sources. The multi messenger observations of the binary neutron star, GW170817, open the new method to estimate the Hubble constant. The accuracy of estimation of the constant is proportional to the systematic uncertainties of source distance. 
+% Commented out by SH 180412
+
 %To understand the origin of heavier binary black hole, we need to obtain the precise mass and distance distribution. So, the improvement of absolute calibration is one of the important topic for the future gravitational wave astronomy.
 
 %Calibration
-An interferometer measures the change of distance difference along the two arms of interferometer. Then, the fluctuations in the degree of freedom of differential arm length (DARM) is suppressed by the DARM control loop. The reconstruction signal of DARM fluctuation at the observation frequency is excited by the gravitational waves. We can reconstruct the gravitational waveform with the calibrated error and control signals of this DARM loop. To calibrate the signals, the accurate modeling of the actuator and sensing function is essential. To understand the model, we need to measure the transfer function and monitor the time dependency of the transfer function using continuous sine curve (calibration lines). The residual of the time-dependent models corresponds to uncertainty of the detection.
+An interferometer measures the change of distance difference along the two arms of interferometer. Then, the fluctuations in the degree of freedom of differential arm length (DARM) is suppressed by the DARM control loop. The reconstruction signal of DARM fluctuation at the observation frequency is excited by the gravitational waves. We can reconstruct the gravitational waveform with the calibrated error and control signals of this DARM loop. To calibrate the signals, the accurate modelings of the actuator and sensing function are essential. To understand the model, we need to measure the transfer function and monitor the time dependency of the transfer function using continuous sine curve (calibration lines). The residual of the time-dependent models corresponds to uncertainty of the detection.
 
 %Pcal
-To reduce the calibration systematic uncertainty, we need to inject well parameterized calibration line by photon calibrator (Pcal) or other calibration source and monitoring the time variation of the response of IFO. The first generation of the photon calibrator is developed by the Glasgow. They proposed the modulation method with photon pressure for understanding the response of interferometer. LIGO employ the second generation photon calibrator for the calibration of time-dependent response of IFO~\cite{doi:10.1063/1.4967303}.  LIGO and KAGRA use a power sensor called to as the Gold standard, which is calibrated by the laser power standard of NIST in Boulder, CO. However, it has a challenging issue of the absolute calibration due to the accuracy of the absolute laser power of laser standard between national metrology institute from nine countries. The 
-systematic discrepancies between nine countries are as large as 3.5~\%.
+To reduce the calibration systematic uncertainty, we need to inject well parameterized calibration line by photon calibrator (Pcal) or other calibration source for monitoring the time variation of the response of IFO. The first generation of the photon calibrator was developed by the Glasgow and GEO600~\cite{CLUBLEY200185,MOSSAVI20061}. They proposed the modulation method with photon pressure for understanding the response of interferometer. The second generation photon calibrator is developed by LIGO~\cite{doi:10.1063/1.4967303,0264-9381-27-8-084024,0264-9381-26-24-245011,0264-9381-32-2-024001}. LIGO and Virgo employ the second generation photon calibrator for the calibration of time-dependent response of IFO~\cite{0264-9381-32-2-024001}. The third generation photon calibrator is developed by KAGRA~\cite{KAGRA_Pcal}. KAGRA employ the 20~W laser and independent modulation system for injected beams. LIGO and KAGRA use a power sensor called to as the Gold standard, which is calibrated by the laser power standard of NIST in Boulder, CO~\cite{taylor:1994:GEEU}. However, it has a challenging issue of the absolute calibration due to the accuracy of the absolute laser power of laser standard between national metrology institute from nine countries. The 
+systematic discrepancies between nine countries are as large as 3.5~\%~\cite{EUROMET}.
 
 %KAGRA and Our approach
-The dynamic gravity field calibrator (Gcal) is one of the candidates to be able to solve the uncertainty problem of absolute calibration. The technologies of the system are established and tested in Forward and Miller, Weber, University of Tokyo and Rome group. Related techniques using gravity field calibrator for the calibration are discussed in Matone et al \cite{0264-9381-24-9-005}. It can modulate the test mass using gravity gradient with rotor. The amplitude of displacement of the mirror is determined by masses, distance, frequency, radius, and gravity constant. 
+The dynamic gravity field calibrator (Gcal) is one of the candidates to be able to solve the uncertainty problem of absolute calibration. The technologies of the system are established and tested in Forward and Miller~\cite{doi:10.1063/1.1709366}, Weber~\cite{PhysRevLett.18.795,PhysRev.167.1145}, University of Tokyo~\cite{Hirakawa,1347-4065-19-3-L123,1347-4065-20-7-L498,PhysRevD.26.729,PhysRevD.32.342} and Rome university group~\cite{Astone1991}. Related techniques using gravity field calibrator for the calibration are discussed in Matone et al \cite{0264-9381-24-9-005}. It can modulate the test mass using gravity gradient with rotor. The amplitude of displacement of the mirror is determined by masses, distance, frequency, radius, and gravity constant. 
 %Chap1 is XXXXX, … .
 
 In this paper, we propose how we can achieve sub-percent uncertainty of the calibration. We focus on the combination method of the photon calibrator and gravity field calibrator.
@@ -94,23 +129,23 @@ In section \ref{sec:PGCAL}, we show how to calibrate the absolute displacement w
 
 \section{Photon calibrator} \label{sec:Pcal}
 Pcal relies on the photon radiation pressure from the power modulated laser beams reflecting on the test mass to apply periodic force via the recoil of photons~\cite{doi:10.1063/1.4967303}. 
-LIGO, Virgo and KAGRA employ the photon calibrator for the calibration of the interferometer response~\cite{0264-9381-34-1-015002}. Each gravitational detectors placed the 1047~nm laser around the end test mass. The displacement of the test mass can be described as
+advanced LIGO, advanced Virgo and KAGRA employ the photon calibrator for the calibration of the interferometer response~\cite{0264-9381-34-1-015002, KAGRA_Pcal,0264-9381-32-2-024001}. Each gravitational detectors placed the 1047~nm laser around the end test mass. The displacement of the test mass can be described as
 \begin{equation}
  x = \frac{P \cos{\theta}}{2c} s(\omega)\left(1+\frac{M}{I}\vec{a} \cdot \vec{b} \right) , \label{pcal}
 \end{equation}
-where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency of the laser power modulation, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. the schematic view is shown in Fig.~\ref{fig:Pcal}. $I=Mh^2/12+Mr^2/4$ is inertia, where $h$ and  $r$ are thickness and radius of test mass. $s(\omega)$ is transfer function between force and displacements. We can regard the $s(\omega)$ as $1/(M \omega^2)$ above 20 Hz. 
+where $P$ is absolute laser power, $\theta$ is incident angle of the Pcal laser, $M$ is mass of test mass, $\omega$ is angular frequency of the laser power modulation, $\vec{a}$ and $\vec{b}$ are position vector of Pcal laser beams. The schematic view is shown in Fig.~\ref{fig:Pcal}. $I=Mh^2/12+Mr^2/4$ is the moment of inertia, where $h$ and  $r$ are thickness and radius of test mass. $s(\omega)$ is transfer function between force and displacements. We can regard the $s(\omega)$ as $1/(M \omega^2)$ above 20 Hz. 
 
-The laser power is stabilized less than design sensitivity. The schematic vier of the photon calibrator is shown in Fig.~\ref{fig:Pcal}. The stabilized laser is mounted on the transmitter module. The power is monitored by the response of the photo detectors at the transmitter module and receiver module.  
+The laser power is stabilized less than design sensitivity. The schematic view of the photon calibrator is shown in Fig.~\ref{fig:Pcal}. The stabilized laser is mounted on the transmitter module. The power is monitored by the response of the photo detectors at the transmitter module, $V_{\mathrm{TxPD}}$, and receiver module, $V_{\mathrm{RxPD}}$.  
 The largest relative uncertainty of photon calibrator is that of laser power.
 LIGO and KAGRA use the working standard to cross-calibrate the relative response of each interferometer. The relative uncertainty of  each  calibrator is 0.51 \%~\cite{doi:10.1063/1.4967303}. 
-The second largest relative uncertainty of photon calibrator is optical efficiency of optical path. We calibrate the injected power from outside of the vacuum chamber. We need to estimate the laser power response through the response of photo detector at the outside of vacuum chamber. The measured uncertainty of optical efficiency in LIGO is 0.37 \%. 
-For the absolute calibration, the detector, so called Gold standard, is compared with the NIST laser power standard. We send Gold standard to NIST and calibrate the response of detector. After that, we bring the gold standard to LHO and calibrate the working standard Hanford, Livingston and KAGRA. The uncertainty of laser standard institutes is a 3.5~\%. 
-The reduction of these uncertainties are essential for the gravitational wave observation.
+The second largest relative uncertainty is an optical efficiency of the optical path. We calibrate the injected power from the outside of the vacuum chamber. Therefore, we need to consider the optical efficiency due to the transmittance of the vacuum window and reflectance of the mirrors. The measured uncertainty of optical efficiency in LIGO is 0.37 \%. 
+For the absolute calibration, the detector, so called ``Gold standard", is calibrated with the NIST laser power standard. After that, The responses of ``Working standard" of Hanford, Livingston and KAGRA are calibrated by the "Gold standard" in LIGO Hanford observatory. 
+However, the result of comparison between accuracies of the absolute laser powers of each institutes has 3.5~\% uncertainty. It implies that the serious systematic error for distance estimation because the uncertainty of the absolute calibration propagate to the distance of the GW source.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Pcal.eps}
-\caption{Schematic view of photon calibrator. We place the stabilized laser on the transmitter module. The injected signal at the test masses is monitored by using the responces of photo detector power between the transmitter module, $V_{TxPD}$ and  receiver module, $V_{RxPD}$.  The geometrical factor is characterized by the position vectors of photon calibrator beams, $\vec{a}=\vec{a_1}+\vec{a_2}$, and the main beam, $\vec{b}$.}
+\caption{Schematic view of photon calibrator. We place the stabilized laser on the transmitter module. The injected signal at the test masses is monitored by using the response of photo detector power between the transmitter module, $V_{TxPD}$ and  receiver module, $V_{RxPD}$.  The geometrical factor is characterized by the position vectors of photon calibrator beams, $\vec{a}=\vec{a_1}+\vec{a_2}$, and the main beam, $\vec{b}$.}
 \label{fig:Pcal}
 \end{center}
 \end{figure}
@@ -124,7 +159,7 @@ The reduction of these uncertainties are essential for the gravitational wave ob
 & KAGRA& advanced LIGO& advanced Virgo \\
 \hline
 Mirror material & Sapphire & Silica & Silica \\
- Mirror mass & 22.89 kg & 40 kg & 40 kg \\
+ Mirror mass & 23 kg & 40 kg & 40 kg \\
   Mirror diameter & 220 mm & 340 mm & 350 mm \\
     Mirror thickness & 150 mm & 200 mm & 200 mm \\
  Distance of Pcal from ETM & 36 m & 8 m & 1.5 m \\
@@ -137,20 +172,20 @@ Mirror material & Sapphire & Silica & Silica \\
 \end{table}
 
 \section{Gravity field calibrator} \label{sec:Gcal}
-To solve the uncertainty problem of the absolute calibration, we propose the gravity field calibrator. The gravity field calibrator generate the gravity field at the end of test mass by rotating the multipole masses. The rotor placed in the vacuum chamber for isolating the acoustic noise. To monitor the frequency, we mount the 10-bit encoder. We monitor the frequency using 16 bit ADC system.
-We calculated the displacement by changing dynamic gravity field of multipole moment with with N masses.
-We assumed the suspended test mass for the interferometer and disk with multipole mass as shown in Fig ~\ref{fig:dim}.
-We put the masses $m$ at the positions of the radius $r$. The distance between the center of mass of mirror and disk is assumed $d$.
+To solve the uncertainty problem of the absolute calibration, we propose the method of gravity field calibrator. The gravity field calibrator generate the dinamic gravity field at the end of test mass by rotating the multipole masses. The rotor placed in the vacuum chamber for isolating the acoustic noise. To monitor the frequency, we mount the 10-bit encoder. We read the response of encoder using 16 bit ADC system.
+We calculated the displacement by changing dynamic gravity field of multipole moment with N peaces of masses.
+We assumed the suspended test mass for the interferometer and disk with multipole masses as shown in Fig ~\ref{fig:dim}.
+We put the masses, $m$, at the positions of the radius, $r$. The distance between the center of mass of mirror and disk is assumed $d$.
 We rotate the disk at the angular frequency of $\omega_{\mathrm{rot}}=2\pi f_{\mathrm{rot}}$.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{dim.eps}
-\caption{Schematic view of gravity field calibrator. We placed the rotor at the displacement of $d$ away from test masses. Multipole mass generate the gravitational potential at the test mass position.}
+\caption{Schematic view of gravity field calibrator. We placed the rotor at  the same hight and the distance of $d$ away from test masses. Multipole mass generate the gravitational potential at the test mass position.}
 \label{fig:dim}
 \end{center}
 \end{figure}
-First we calculate the distance with N pieces of weight which are separated by radius of r from the center of the rotor mass and arranged at equal intervals, respectively.
+First we calculate the distance with N pieces of masses which are separated by radius of r from the center of the rotor mass and arranged at equal intervals, respectively.
 Distance between i-th mass and center of test mass is written as
 \begin{equation}
 L_i=d \sqrt{1+\left( \frac{r}{d} \right)^2 -2\left( \frac{r}{d} \right) \cos{\phi_i} },
@@ -162,7 +197,7 @@ V &=& \Sigma^N_{i=0} V_i \\
 &=& -GMm \Sigma^N_{i=0}L_i^{-1}\\
 &=&-\frac{GMm}{d} \Sigma^N_{i=0} \Sigma^{\infty}_{n=0} \left( \frac{r}{d} \right)^n P_n\left(\cos{\left(\omega_{\mathrm{rot}} t +\frac{2 \pi i}{N}\right)}\right),
 \end{eqnarray}
-where $P_n$ is Legendre polynomial. The equation of motion of test mass is 
+where $P_n$ is Legendre polynomial, and $V_i$ is potential of a mass. The equation of motion of test mass is 
 \begin{equation}
 Ma=\left| \frac{\partial V}{\partial{d}} \right| =\frac{GMm}{d^2}\Sigma^N_{i=0} \Sigma^{\infty}_{n=0}(n+1) \left( \frac{r}{d} \right)^n P_n\left(\cos{\left(\omega_{\mathrm{rot}} t +\frac{2 \pi i}{N}\right)}\right),
 \end{equation}
@@ -200,7 +235,7 @@ x_{2\mathrm{f}}=9\frac{GMm_{\mathrm{q}}r_{\mathrm{q}}^2}{d^4}s(\omega). \label{2
 \end{equation}
 
 \subsection{Displacement of test mass (Haxapole)} \label{Hexa}
-We calculate the displacement of the hexapole mass distribution, which corresponds to $N=3$.
+We also calculate the displacement of the hexapole mass distribution, which corresponds to $N=3$.
 The masses and radiuses of hexapole are assumed as $m_{\mathrm{h}}$ and $r_{\mathrm{h}}$. 
 The equation of motion of test mass is described as
 \begin{eqnarray}
@@ -217,14 +252,14 @@ where amplitude of 3-f is described as
 \end{equation}
 
 \section{Absolute power calibration by using Gcal and Pcal} \label{sec:PGCAL}
-In this section, we will discuss about absolute laser power calibration using interferometer. 
+In this section, we discuss about absolute laser power calibration using interferometer. 
 Figure~\ref{fig:IFO} shows the configuration of the calibration by using the combination of photon calibrator and gravity field calibrator.
-First, we modulate the mirror position using gravity field calibrator. We can measure the signal of $x_{\mathrm{2f}}$ and $x_{\mathrm{3f}}$ in the response of interferometer. Second, we send the interferometer signal to the excitation port of photon calibrator as a reference signal port of feedback control as shown in Fig.~\ref{fig:Pcal}. The photon calibrator cancel the displacement by gravity field calibrator. Third, we measure the response of the detector of transmitter module and receiver module, whose unit is volt. The output signal of transmitter module, $V_{TxPD}$ and receiver module, $V_{RxPD}$ should be corresponding to displacement from gravity field. By using Eq~(\ref{pcal}),(\ref{2f}), and (\ref{3f}), the modulated powers are
+First, we modulate the mirror position using gravity field calibrator. We can measure the signal of $x_{\mathrm{2f}}$ and $x_{\mathrm{3f}}$ in the response of interferometer. Second, we send the interferometer signal to the excitation port of photon calibrator as a reference signal port of feedback control as shown in Fig.~\ref{fig:IFO}. The photon calibrator cancel the displacement by gravity field calibrator. Third, we measure the response of the detector of transmitter module and receiver module, whose units are volt. The output signal of transmitter module, $V_{\mathrm{TxPD}}$ and receiver module, $V_{\mathrm{RxPD}}$ should be corresponding to displacement from gravity field. By using Eq~(\ref{pcal}),(\ref{2f}), and (\ref{3f}), the modulated powers are
 \begin{eqnarray}
  P_{\mathrm{2f}}=18 \frac{Gcm_{\mathrm{q}}Mr_{\mathrm{q}}^2}{d^4cos\theta}\frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \label{P2f} \\
  P_{\mathrm{3f}}= 30\frac{Gcm_{\mathrm{h}}Mr_{\mathrm{h}}^3}{d^5cos\theta}\frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \label{P3f}
 \end{eqnarray}
-Fourth, we demodulate the signal of transmitter and receiver module using the encoder signal of gravity field calibrator.
+Fourth, we demodulate the signal of the transmitter and receiver modules using the measured encoder signal of gravity field calibrator.
 The demodulated signals are 
 \begin{eqnarray}
 V_{\mathrm{2f}}^{\mathrm{T}}=\rho_{\mathrm{T}}P_{\mathrm{2f}}, \\
@@ -232,8 +267,8 @@ V_{\mathrm{2f}}^{\mathrm{R}}=\rho_{\mathrm{R}}P_{\mathrm{2f}}, \\
 V_{\mathrm{3f}}^{\mathrm{T}}=\rho_{\mathrm{T}}P_{\mathrm{3f}}, \\
 V_{\mathrm{3f}}^{\mathrm{R}}=\rho_{\mathrm{R}}P_{\mathrm{3f}}, 
 \end{eqnarray} 
-where $\rho_T$ and $\rho_R$ are transfer function from power to voltage of the photo detector output at the transmitter and receiver modules.
-Therefore, we can calculate the distance with the ratio of response between 2-f and 3-f components: 
+where $\rho_{\mathrm{T}}$ and $\rho_{\mathrm{R}}$ are transfer function from power to voltage of the photo detector output at the transmitter and receiver modules.
+Therefore, we can measure the distance with the ratio of response between 2-f and 3-f components: 
 \begin{equation}
 d=\frac{5}{3} \frac{V_{\mathrm{2f}}^{\mathrm{T}}}{V_{\mathrm{3f}}^{\mathrm{T}}}\frac{m_{\mathrm{h}}}{m_{\mathrm{q}}}\frac{r_{\mathrm{h}}^{3}}{r_{\mathrm{q}}^{2}}=\frac{5}{3} \frac{V_{\mathrm{2f}}^{\mathrm{R}}}{V_{\mathrm{3f}}^{\mathrm{R}}} \frac{m_{\mathrm{h}}}{m_{\mathrm{q}}}\frac{r_{\mathrm{h}}^{3}}{r_{\mathrm{q}}^{2}}. \label{d}
 \end{equation}
