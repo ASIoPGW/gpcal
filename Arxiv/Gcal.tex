@@ -431,10 +431,31 @@ The estimated relative uncertainties of the powers are 0.4~\%. One of the larges
  Finally, the estimated relative uncertainty of  displacement is written as
 \begin{eqnarray}
 \left( \frac{\delta x}{x} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 +\left( \frac{\delta V_{in}}{V_{in}} \right)^2+\left( \frac{\delta M}{M} \right)^2+\left( \frac{\delta s(\omega)}{s(\omega)} \right)^2+ 25\left( \frac{\delta m_{\mathrm{q}}}{m_{\mathrm{q}}} \right)^2 +16\left( \frac{\delta m_{\mathrm{h}}}{m_{\mathrm{h}}} \right)^2 \nonumber \\
-&+&25\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+ 100\left( \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}} \right)^2 +144\left( \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} \right)^2.
+&+&25\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+ 100\left( \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}} \right)^2 +144\left( \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} \right)^2. \label{deltax}
 \end{eqnarray}
 The contribution of the radius uncertainty is amplified by the O(100) factor. To reduce the noise of the displacement, we need to reduce the uncertainty of the shape of the rotor and masses.
 The uncertainty of the $V^{\mathrm{R}}_{\mathrm{2f}}$,$V^{\mathrm{R}}_{\mathrm{3f}}$, $V^{\mathrm{R}}_{0}$ are much less than that of other contributions. We can reduce the uncertainty of these values with long time integration time due to the statistics. Each the uncertainty is listed in Table.~\ref{sus}. The estimated  total uncertainty of the displacement is 0.3~\%.
+
+% Added by SH 180414
+\begin{table}
+\begin{center}
+\caption{Comparison of systematic error contributions between eq.~\ref{deltax} and Monte Carlo simulation. \label{tab:MC}}
+\begin{tabular}{ccccc}
+\hline
+&&Relative uncertainty&Contribution(eq.~\ref{deltax})&Contribution(MC simulation)\\
+\hline
+$G$& Gravity constant&0.015 \%&0.015 \%&0.015 \%\\
+$M$& Mass of test mass& 0.02~\%& 0.02~\%& 0.02~\%\\
+$m_{\mathrm{q}}$&Mass of poles& 0.004~\% & 0.025~\% & 0.022~\%\\
+$r_{\mathrm{q}}$&Radius of poles& 0.01/0.02~\%& 0.26~\%& 0.028~\%\\
+$V^{\mathrm{R}}$&Demodulated signal& 0.001~\%& 0.006~\%& 0.006~\%\\
+\hline\hline
+$x$&displacement&& 0.26~\%& 0.048~\%\\
+\hline
+\end{tabular}\\
+\end{center}
+\end{table}
+% Added by SH 180414
 
 \section{Conclusion}
 Photon calibrator is one of the powerful calibrators in advanced LIGO, advanced Virgo and KAGRA. It can calibrate the response of IFO and its uncertainty is essential for estimation of parameters of the gravitational wave source. In particular, the distance of the source is strongly depend on the absolute laser power of the photon calibrator. In previous study, the Gold standard, which response is calibrated by the laser power standard of NIST, is used for the absolute laser power calibration of the photon calibrator. However, current limit of the absolute laser power between each country is about 3.5~\%. It is directly propagate to the uncertainty of absolute displacement of the gravitational wave detector.
