@@ -96,7 +96,7 @@ Goetz, E., Kalmus, P., Erickson, S., Jr, R. L.~S., Gonzalez, G., Kawabe, K.,
   pressure,'' {\em Classical and Quantum Gravity}~{\bf 26}(24),  245011 (2009).
 
 \bibitem{KAGRA_Pcal}
-``In preparation.,''
+ {\em In preparation} .
 
 \bibitem{taylor:1994:GEEU}
 Taylor, B.~N. and Kuyatt, C.~E., ``Guidelines for evaluating and expressing the
@@ -165,6 +165,10 @@ Tuyenbayev, D., Karki, S., Betzwieser, J., Cahillane, C., Goetz, E., Izumi, K.,
   Savage, R.~L., ``Improving ligo calibration accuracy by tracking and
   compensating for slow temporal variations,'' {\em Classical and Quantum
   Gravity}~{\bf 34}(1),  015002 (2017).
+
+\bibitem{SUMCON}
+SUMCON
+  (https://gwdoc.icrr.u-tokyo.ac.jp/cgi-bin/DocDB/ShowDocument?docid=3729).
 
 \bibitem{Inoue:2016kyq}
 Inoue, Y. et~al., ``{Two-layer anti-reflection coating with mullite and

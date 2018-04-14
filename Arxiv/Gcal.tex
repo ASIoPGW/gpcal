@@ -32,16 +32,16 @@
 %  can be indicated with a superscript in italics, 
 %  which is easily obtained with \supit{}.
 
-\author{Yuki Inoue\supit{a,b}, Sadakazu Haino\supit{a}, Nobuyuki Kanda\supit{c}, Yujiro Ogawa\supit{b.d}, Toshikazu Suzuki\supit{b,e}, Takayuki Tomaru\supit{b,d,e}, Takahiro Yamamoto\supit{f}, Takaaki Yokozawa\supit{f}
+\author{Yuki Inoue\supit{a,b}, Sadakazu Haino\supit{a}, Nobuyuki Kanda\supit{c}, Yujiro Ogawa\supit{b,d}, Toshikazu Suzuki\supit{b,e,f}, Takayuki Tomaru\supit{b,d,e,f}, Takahiro Yamamoto\supit{g}, Takaaki Yokozawa\supit{g}
 \skiplinehalf
-\supit{a}Institute of Physics, Academia Sinica, Nankang, Taipei 11529, Taiwan; \\
-\supit{b}High Energy Accelerator Research Organization, Tsukuba, Ibaraki, 305-0801, Japan;\\
-\supit{c}Department of Physics, Osaka City University, Sumiyoshi, Osaka 558-8585, Japan;\\
+\supit{a}Institute of Physics, Academia Sinica, Taipei 11529, Taiwan; \\
+\supit{b}High Energy Accelerator Research Organization (KEK), Ibaraki 305-0801, Japan;\\
+\supit{c}Department of Physics, Graduate School of Science, Osaka City University, Osaka 558-8585, Japan;\\
 \supit{d}SOKENDAI (The Graduate University for Advanced Studies), Hayama, Miura District, Kanagawa 240-0115, Japan;\\
-\supit{e}Institute for Cosmic Ray Research, University of Tokyo, Kashiwa, Chiba, 277-8582, Japan;\\
-\supit{f}KAGRA Observatory, Institute for Cosmic Ray Research, University of Tokyo, Hida, Gifu 506-1205, Japan;\\
+\supit{e}Institute for Cosmic Ray Research, The University of Tokyo, Chiba 277-8582, Japan;\\
+\supit{f}Kavli Institute for the Physics and Mathematics of the Universe (Kavli IPMU), The University of Tokyo, Chiba 277-8568, Japan;\\
+\supit{g}Institute for Cosmic Ray Research, The University of Tokyo, Gifu 506-1205, Japan;\\
 }
-
 %>>>> Further information about the authors, other than their 
 %  institution and addresses, should be included as a footnote, 
 %  which is facilitated by the \authorinfo{} command.
@@ -63,7 +63,7 @@
 \begin{abstract}
 Absolute calibration of the gravitational wave detectors is an essential to evaluate the various parameters of the gravitational wave sources. 
 The photon calibrator is primary calibrator for calibrating the absolute displacement of the mirror by using the photon pressure. 
-Current technological limit of the absolute calibration uncertainty is 3.5 \% corresponding to the uncertainty of the laser power standard of the standard metrology institutes from nine country.  In order to reduce the uncertainty of the photon calibrator, we propose a new method using the combination of photon calibrator and gravity field calibrator. The gravity field calibrator gives the modulation to mirror using the gravity gradient. In previous study, uncertainty of the distance between the test mass and gravity field calibrator is one of the serious systematic error of the absolute calibration. To cancel this uncertainty, we newly propose the method of quadrupole and hexapole mass distribution.  We also estimated the uncertainty of this method. The estimated precision of absolute calibration is 0.3\%, which is 10 times less than that of previous method.
+Current technological limit of the absolute calibration uncertainty is 3.5 \% corresponding to the uncertainty of the laser power standard of the standard metrology institutes from nine country.  In order to reduce the uncertainty of the photon calibrator, we propose a new method using the combination of photon calibrator and gravity field calibrator. The gravity field calibrator gives the modulation to mirror using the gravity gradient. In previous study, uncertainty of the distance between the test mass and gravity field calibrator is one of the serious systematic error of the absolute calibration. To cancel this uncertainty, we newly propose the method of quadrupole and hexapole mass distribution.  We also estimated the uncertainty of this method. The estimated precision of absolute calibration is 0.26\%, which is 10 times less than that of previous method.
 
 \end{abstract}
 
@@ -284,7 +284,7 @@ where we assume $P(\omega)=\rho_{\mathrm{R}} V_{\mathrm{in}}$, and $V_{\mathrm{i
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{IFO.eps}
-\caption{Test setup of the calibration of the absolute laser power of the Pcal by gravity field calibrator. We place the gravity field calibrator behind of the test mass. The frequency of the gravity field calibrator is monitored by the encoder out put. The error signal of differential arm length of the interferometor send to the reference port of the photon calibrator for canceling of the modulation of dynamic gravity field with feedback technique, where $G$ is transfer function. Output of photon calibrator is synchronized by the force from the gravity field calibrator. We demodulate these out put with encoder signal.}
+\caption{Test setup of the calibration of the absolute laser power of the Pcal by gravity field calibrator. We place the gravity field calibrator behind of the test mass. The frequency of the gravity field calibrator is monitored by the encoder output. The error signal of differential arm length of the interferometer send to the reference port of the photon calibrator for canceling of the modulation of dynamic gravity field with feedback technique, where $G$ is transfer function. Output signals from the photon calibrator are synchronized with the force from the gravity field calibrator. We demodulate the output signals by using 2-f and 3-f signal monitored by encoder.}
 \label{fig:IFO}
 \end{center}
 \end{figure}
@@ -301,14 +301,14 @@ The following discussions are assumed with KAGRA basic parameters ad listed in T
 \hline
 &&Value&Relative uncertainty \\
 \hline
-$G$& Gravity constant&$6.6742 \times 10^{-11}~\mathrm{[m^3kg^{-1}sec^{-2}]}$&0.015 \%\\
+$G$& Gravity constant&$6.6742 \times 10^{-11}~\mathrm{m^3kg^{-1}sec^{-2}}$&0.015 \%\\
 %$c$& speed of light&$2.99792458 \times 10^8$ [m/sec]& 0\%\\
 $\cos{\theta}$& Incident angle&1.000& 0.07~\%\\
-$M$& Mass of test mass&22.89~[kg] & 0.02~\%\\
-$m_{\mathrm{q}}$&Mass of quadrupole&4.485~[kg] & 0.004~\%\\
-$m_{\mathrm{h}}$&Mass of hexapole& 4.485~[kg] &0.004~\%\\
-$r_{\mathrm{q}}$&Radius of quadrupole&0.200~[m] & 0.01~\%\\
-$r_{\mathrm{h}}$&Radius of hexapole& 0.125~[m] & 0.02~\%\\
+$M$& Mass of test mass&22.89~kg & 0.02~\%\\
+$m_{\mathrm{q}}$&Mass of quadrupole&4.485~kg & 0.004~\%\\
+$m_{\mathrm{h}}$&Mass of hexapole& 4.485~kg &0.004~\%\\
+$r_{\mathrm{q}}$&Radius of quadrupole&0.200~m & 0.01~\%\\
+$r_{\mathrm{h}}$&Radius of hexapole& 0.125~m & 0.02~\%\\
 $1+\frac{I}{M}\vec{a}\cdot \vec{b}$& Geometrical factor & 1&0.3~\% \\
 \hline
 \end{tabular}\\
@@ -366,7 +366,7 @@ modulation& n=1 & n=2& n=3 &n=4&n=5&n=6&n=7 \\
 
 
 \subsection{Systematic error of the transfer function}
-The gravity field calibrator can modulate the mirrors with gradient of gravity potential. However, its gravity gradient act the masses of suspension system as shown in Fig.~\ref{fig:cryo}. We simulated the transfer function between each mass and test mass.The transfer function is calculated by the suspension rigid-body simulation code, called SUMCON~\cite{`}. We estimated the total displacement including all the masses. Figure \ref{fig:ratio} shows the displacement ratio between the sensed motion and free mass motion as a function of frequency. The simulation result is in good agreement with free mass motion at the frequency larger than 10Hz. The structures of low frequency are corresponding to the resonant peak of the suspension system. Therefore, we can neglect the intermediate mass effect and regard as free mass motion larger than 10~Hz. We assumed the rotation frequency as 16~Hz, which is corresponding to 32~Hz and 48~Hz at the operation frequency of 2-f and 3-f components.  We used this assumption in the following section.
+The gravity field calibrator can modulate the mirrors with gradient of gravity potential. However, its gravity gradient act the masses of suspension system as shown in Fig.~\ref{fig:cryo}. We simulated the transfer function between each mass and test mass.The transfer function is calculated by the suspension rigid-body simulation code, called SUMCON~\cite{SUMCON}. We estimated the total displacement including all the masses. Figure \ref{fig:ratio} shows the displacement ratio between the sensed motion and free mass motion as a function of frequency. The simulation result is in good agreement with free mass motion at the frequency larger than 10Hz. The structures of low frequency are corresponding to the resonant peak of the suspension system. Therefore, we can neglect the intermediate mass effect and regard as free mass motion larger than 10~Hz. We assumed the rotation frequency as 16~Hz, which is corresponding to 32~Hz and 48~Hz at the operation frequency of 2-f and 3-f components.  We used this assumption in the following section.
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Cryo.eps}
@@ -393,8 +393,8 @@ x^{\mathrm{rms}}_{\mathrm{2f}}&=&1.178 \times 10^{-16}\mathrm{[m]} \times \left(
 x^{\mathrm{rms}}_{\mathrm{3f}}&=&2.130 \times 10^{-18}\mathrm{[m]} \times \left( \frac{G}{6.6742 \times 10^{-11} \mathrm{[m^3kg^{-1}sec^{-2}]}} \right) \times \left( \frac{m_{\mathrm{h}}}{4.485 \mathrm{[kg]}} \right) \times \left( \frac{r_{\mathrm{h}}}{0.125 \mathrm{[m]}} \right)^3 \nonumber \\
  &&\times \left( \frac{2\mathrm{[m]}}{d} \right)^5 \times \left( \frac{2\pi(3\times 16)\mathrm{[Hz]}}{\omega} \right)^2.
 \end{eqnarray}
-We defined the signal-to-noise ratio (SNR) with the ratio of RMS displacement to the design noise spectrum density of IFO of KAGRA at 32~Hz for 2-f and 48~Hz for 3-f.
-By using this result, we estimate the signal to noise ratio (SNR) of the peaks.
+We define the signal-to-noise ratio ($\!S\!N\!R$) with the ratio of RMS displacement to the design noise spectrum density of IFO of KAGRA at 32~Hz for 2-f and 48~Hz for 3-f.
+By using this result, we estimate the SNR of the peaks.
 \begin{eqnarray}
 \!S\!N\!R_{\mathrm{2f}}&=&392 \times \left(\frac{3.0 \times 10^{-19} \mathrm{m/\sqrt{Hz}}}{n_{\mathrm{32Hz}}} \right) \times \left(\frac{T}{1 [\mathrm{sec}]} \right)^{1/2} \times \left(\frac{x_{\mathrm{2f}}^{\mathrm{rms}}}{1.178 \times 10^{-16}\mathrm{[m]} }  \right),   \\
 \!S\!N\!R_{\mathrm{3f}}&=&73 \times \left(\frac{2.9 \times 10^{-20} \mathrm{m/\sqrt{Hz}}}{n_{\mathrm{48Hz}}} \right) \times \left(\frac{T}{1 [\mathrm{sec}]} \right)^{1/2} \times \left(\frac{x_{\mathrm{2f}}^{\mathrm{rms}}}{2.130 \times 10^{-18}\mathrm{[m] }} \right)   \\
@@ -418,23 +418,23 @@ The estimated $V^{\mathrm{T}}_{\mathrm{2f}}/V^{T}_{\mathrm{3f}}$ by changing dis
 We  estimate the laser power by using the following equations:
 \begin{eqnarray}
 \left( \frac{\delta P_{\mathrm{2f}}}{P_{\mathrm{2f}}} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 + \left( \frac{\delta M}{M} \right)^2+25\left( \frac{\delta m_{\mathrm{q}}}{m_{\mathrm{q}}} \right)^2+16\left( \frac{\delta m_{\mathrm{h}}}{m_{\mathrm{h}}} \right)^2 +100\left( \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}} \right)^2+144\left( \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} \right)^2 \nonumber \\
-&+&16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+\left( \frac{\delta (\cos{\theta})}{\cos{\theta}} \right)^2+ \left( \frac{\delta\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)}{\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)} \right)^2 \\
+&+&16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{3f}}}}{V^{\mathrm{R}}_{{\mathrm{3f}}}} \right)^2+\left( \frac{\delta (\cos{\theta})}{\cos{\theta}} \right)^2+ \left( \frac{\delta\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)}{\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)} \right)^2 \\
 \left( \frac{\delta P_{\mathrm{3f}}}{P_{\mathrm{3f}}} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 + \left( \frac{\delta M}{M} \right)^2+25\left( \frac{\delta m_{\mathrm{q}}}{m_{\mathrm{q}}} \right)^2+16\left( \frac{\delta m_{\mathrm{h}}}{m_{\mathrm{h}}} \right)^2 +100\left( \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}} \right)^2+144\left( \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} \right)^2 \nonumber \\
-&+&16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+\left( \frac{\delta (\cos{\theta})}{\cos{\theta}} \right)^2+ \left( \frac{\delta\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)}{\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)} \right)^2 
+&+&16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{3f}}}}{V^{\mathrm{R}}_{{\mathrm{3f}}}} \right)^2+\left( \frac{\delta (\cos{\theta})}{\cos{\theta}} \right)^2+ \left( \frac{\delta\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)}{\left( 1+\frac{M}{I}\vec{a}\cdot \vec{b} \right)} \right)^2 
 \end{eqnarray}
 The uncertainty of the quadrupole and hexapole masses are limited by the accuracy of  an electronic balance. In this case, we use the masses made of Tungsten. The density of Tungsten is $19.25~\mathrm{g/cm^3}$. The diameter and thickness of mass are 0.0~m and 0.08~m, respectively. Therefore, the mass of the rotor mass is 4.485~kg. To measure this mass, we assumed that we use an electronic balance whose catalog number and accuracy are CG-6000 and 0.2~g, respectively. Therefore, the relative uncertainty of the mass of rotor mass is 0.04~\%.
 
  To make the rotor disk, we use the NC milling machine. The typical accuracy is less than 0.02 mm. For the measuring of the shape, we employ the three-dimension coordinate measuring machine (CMM)~\cite{Inoue:2016kyq}. The precision of CMM is $2~\mathrm{\mu m}$. We can measure the shape of the rotor and masses with enough of uncertainty using CMM. 
 
-The estimated relative uncertainties of the powers are 0.4~\%. One of the largest uncertainty is the geometrical factor of the Pcal laser. The geometrical factor uncertainty is assumed 0.3 \%, which is same number of LIGO. 
+The estimated relative uncertainties of the powers are 0.40~\%. One of the largest uncertainty is the geometrical factor of the Pcal laser. The geometrical factor uncertainty is assumed 0.26 \%, which is same number of LIGO. 
 
  Finally, the estimated relative uncertainty of  displacement is written as
 \begin{eqnarray}
 \left( \frac{\delta x}{x} \right)^2 &\sim& \left( \frac{\delta G}{G} \right)^2 +\left( \frac{\delta V_{in}}{V_{in}} \right)^2+\left( \frac{\delta M}{M} \right)^2+\left( \frac{\delta s(\omega)}{s(\omega)} \right)^2+ 25\left( \frac{\delta m_{\mathrm{q}}}{m_{\mathrm{q}}} \right)^2 +16\left( \frac{\delta m_{\mathrm{h}}}{m_{\mathrm{h}}} \right)^2 \nonumber \\
-&+&25\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+ 100\left( \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}} \right)^2 +144\left( \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} \right)^2. \label{deltax}
+&+&25\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{3f}}}}{V^{\mathrm{R}}_{{\mathrm{3f}}}} \right)^2+ 100\left( \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}} \right)^2 +144\left( \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} \right)^2. \label{deltax}
 \end{eqnarray}
 The contribution of the radius uncertainty is amplified by the O(100) factor. To reduce the noise of the displacement, we need to reduce the uncertainty of the shape of the rotor and masses.
-The uncertainty of the $V^{\mathrm{R}}_{\mathrm{2f}}$,$V^{\mathrm{R}}_{\mathrm{3f}}$, $V^{\mathrm{R}}_{0}$ are much less than that of other contributions. We can reduce the uncertainty of these values with long time integration time due to the statistics. Each the uncertainty is listed in Table.~\ref{sus}. The estimated  total uncertainty of the displacement is 0.3~\%.
+The uncertainty of the $V^{\mathrm{R}}_{\mathrm{2f}}$,$V^{\mathrm{R}}_{\mathrm{3f}}$, $V^{\mathrm{R}}_{0}$ are much less than that of other contributions. We can reduce the uncertainty of these values with long time integration time due to the statistics. Each the uncertainty is listed in Table.~\ref{sus}. The estimated  total uncertainty of the displacement is 0.26~\%.
 
 % Added by SH 180414
 \begin{table}
@@ -462,13 +462,14 @@ Photon calibrator is one of the powerful calibrators in advanced LIGO, advanced 
 
 To solve the problem, we proposed the combination method of the photon calibrator and gravity field calibrator. Gravity field calibrator can modulate the mirror using dynamic gravity field. By canceling the displacement of the test mass displacement using the photon calibrator, we can calibrate the absolute laser power using gravity field calibrator.
 
-This method has an advantage of a direct comparison of the amplitude of the injected power and gravity field. In previous study, we need to consider the uncertainty of the optical efficiency through the window and mirrors  and geometrical factor of the laser position. This is because we put the Working standard at the outside of the chamber. However, the method of gravity field can compare the displacement directly. By using this method, we can calibrate the uncertainty of optical efficiency and absolute power of the laser.  The estimated uncertainty of the power of this method is 0.4~\%. It imply that we can make a new power standard using interferometer with 10 times improvement.
+This method has an advantage of a direct comparison of the amplitude of the injected power and gravity field. In previous study, we need to consider the uncertainty of the optical efficiency through the window and mirrors  and geometrical factor of the laser position. This is because we put the Working standard at the outside of the chamber. However, the method of gravity field can compare the displacement directly. By using this method, we can calibrate the uncertainty of optical efficiency and absolute power of the laser.  The estimated uncertainty of the power of this method is 0.40~\%. It imply that we can make a new power standard using interferometer with 10 times improvement.
 
-Finally, we estimate the systematic error of the displacement. The estimated absolute uncertainty of the displacement is 0.3 \%, witch is 10 times better than that of previous study.
+Finally, we estimate the uncertainty of the absolute calibration. The estimated absolute uncertainty of the displacement is 0.26~\%, witch is 10 times better than that of previous study. This uncertainty impact on the estimation of the distance of the gravitational wave source. Of particular importance is that the estimated uncertainty can leach the precision of Hubble constant less than 1~\%. It may solve the tension problem between Cephied-SN distance ladder~\cite{Riess_2016} and CMB data assuming a $\Lambda$CDM 
+model~\cite{2016-planck}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \acknowledgments     %>>>> equivalent to \section*{ACKNOWLEDGMENTS}       
  
-We thank Rechard Savage, Darkhan Tuyrnbayev for discussion of the photon calibrator. We would like to express our gratitude to Prof.Takaaki Kajita and Prof.Henry Wong. We would like to thank the KEK Cryogenics Science Center for the support. YI was supported by Academia Sinica under Grants No. CDA-105-M06 in Taiwan. This work was supported by JSPS KAKENHI Grant Numbers 17H106133 and XXXXXX. This work was supported by MEXT, JSPS Leading-edge Research Infrastructure Program, JSPS Grant-in-Aid for Specially Promoted
+We thank Richard Savage, Darkhan Tuyrnbayev for discussion of the photon calibrator. We would like to express our gratitude to Prof.Takaaki Kajita and Prof.Henry Wong. We would like to thank the KEK Cryogenics Science Center for the support. YI was supported by Academia Sinica under Grants No. CDA-105-M06 in Taiwan. This work was supported by JSPS KAKENHI Grant Numbers 17H106133 and 17H01135. This work was supported by MEXT, JSPS Leading-edge Research Infrastructure Program, JSPS Grant-in-Aid for Specially Promoted
 Research 26000005, MEXT Grant-in-Aid for Scientific Research on
 Innovative Areas 24103005, JSPS Core-to-Core Program, A. Advanced
 Research Networks, and the joint research program of the Institute for
