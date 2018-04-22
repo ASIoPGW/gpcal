@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{36}%
+\begin{thebibliography}{37}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -557,13 +557,19 @@
   {} {\  (\bibinfo {year}
   {https://gwdoc.icrr.u-tokyo.ac.jp/cgi-bin/DocDB/ShowDocument?docid=3729})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {CG-6000}()}]{CG6000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {CG-6000}},\ }\href
+  {http://www.vibra.co.jp} {\bibinfo  {journal} {http://www.vibra.co.jp}\
+  }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Inoue}\ \emph {et~al.}(2016)\citenamefont {Inoue}
   \emph {et~al.}}]{Inoue:2016kyq}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Inoue}} \emph {et~al.},\ }\href {\doibase 10.1364/AO.55.000D22} {\
-  (\bibinfo {year} {2016}),\ 10.1364/AO.55.000D22},\ \bibinfo {note} {[Appl.
-  Opt.55,22(2016)]},\ \Eprint {http://arxiv.org/abs/1607.02938}
-  {arXiv:1607.02938 [astro-ph.IM]} \BibitemShut {NoStop}%
+\bibfield  {journal} {  }\bibfield  {author} {\bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Inoue}} \emph {et~al.},\ }\href {\doibase
+  10.1364/AO.55.000D22} {\  (\bibinfo {year} {2016}),\ 10.1364/AO.55.000D22},\
+  \bibinfo {note} {[Appl. Opt.55,22(2016)]},\ \Eprint
+  {http://arxiv.org/abs/1607.02938} {arXiv:1607.02938 [astro-ph.IM]}
+  \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1607.02938;%%
 \end{thebibliography}%
