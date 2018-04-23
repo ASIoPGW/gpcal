@@ -59,13 +59,14 @@ superscriptaddress,
 
 %\preprint{APS/123-QED}
 
-\title{Absolute calibration of gravitational wave detector using gravity field and photon pressure}% Force line breaks with \\
+%\title{Absolute calibration of gravitational wave detector using gravity field and photon pressure}% Force line breaks with \\
+
+\title{Improving the absolute accuracy of the gravitational wave detectors by combining the photon pressure and gravity field calibrators}
 %\thanks{A footnote to the article title}%
 \author{Yuki Inoue}
-\author{ Sadakazu Haino}
+\author{Sadakazu Haino}
 \affiliation{Institute of Physics, Academia Sinica, Taipei 11529, Taiwan}
 \affiliation{High Energy Accelerator Research Organization (KEK), Ibaraki 305-0801, Japan}
-
 \author{Nobuyuki Kanda}
 \affiliation{Department of Physics, Graduate School of Science, Osaka City University, Osaka 558-8585, Japan}
 \author{Yujiro Ogawa}
@@ -147,7 +148,8 @@ siren~\cite{Abbott:2017xzu,Schutz_1986,Holz_2005,Nissanke_2010} to
 determine the absolute luminosity distance to the source directly from the 
 GW signal measurements. Assuming the event rate of 3000 Gpc$^{-3}$yr$^{-1}$ 
 which is consistent with the bounds from GW170817 at 90~\% 
-confidence~\cite{GW170817:2017aa}, we expect to detect GW signals from about 
+confidence~\cite{PhysRevLett.119.161101}, 
+we expect to detect GW signals from about 
 50 BNS standard sirens in the next few observing runs. 
 They can constrain the Hubble constant ($H_0$) 
 measurement to 2~\% or less~\cite{Feeney:2018mkj}, and eventually resolve 
@@ -260,7 +262,7 @@ where the angle of i-th mass is assumed as $\phi_i=\omega_{\mathrm{rot}} t + 2\p
 The gravitational potential at the center of test mass can be described as
 \begin{eqnarray}
 V &=& \Sigma^N_{i=0} V_i, \\
-&=& -GMm \Sigma^N_{i=0}L_i^{-1},\\
+&=& -GMm \Sigma^N_{i=0}L_i^{-1},\\ \label{eq:vpot}
 &=&-\frac{G\!M\!m\!}{d} \Sigma^N_{i=0} \Sigma^{\infty}_{n=0}\! \left(\! \frac{r}{d}\! \right)^n
 \!P_n\! \left(\! \cos{\!\left( \! \omega_{\mathrm{rot}} t \!+\!\frac{2 \pi i}{N}\right)\!}\right),
 \end{eqnarray}
@@ -389,7 +391,13 @@ $1+\frac{I}{M}\vec{a}\cdot \vec{b}$& 1&0.3~\% \\
 \end{table}
 
 \subsection{Systematic error of higher order term}
-In order to achieve the precision less than 1 \%, we need to consider the operation position due to the higher order of Legendre polynomials. This is because that higher order also include the 2-f and 3-f components. The $n$-th order of the Legendre polynomial is calculated in Eq.(\ref{eq:EOM}). The effect of higher order factor is mitigated by the factor of $(r/d)^n$. Table~\ref{tab:N2} and \ref{tab:N3} show the calculated displacements of the higher order terms. To compare the higher order effect, we calculate the ratio between the Finite Element Method (FEM) and calculation by changing the r/d is shown in Fig~\ref{fig:FEM-2f} and ~\ref{fig:FEM-3f}. The results show the higher order of polynomials are less than that of systematic errors. We need to place the mirror at least 2~m away from the mirror and use the sum of the first and second order equation to reduce the systematic error. In the following calculation, we assume the distance as 2~m. 
+In order to achieve the precision less than 1 \%, we need to consider the operation position due to the higher order of Legendre polynomials. This is because that higher order also include the 2-f and 3-f components. The $n$-th order of the Legendre polynomial is calculated in Eq.(\ref{eq:EOM}). The effect of higher order factor is mitigated by the factor of $(r/d)^n$. Table~\ref{tab:N2} and \ref{tab:N3} show the calculated displacements of the higher order terms.
+To investigate the higher order effect, we compare the estimated test mass displacement between the Legendre polynomial approximation and the numerical calculation of $\frac{\partial V}{\partial{d}}$ and Eq.(~\ref{eq:vpot}). The ratio of two calculations on the test mass displacement is shown in Fig~\ref{fig:FEM-2f} and ~\ref{fig:FEM-3f} for quadrupole($N=2$) and hexapole($N=3$) components, respectively, as a function of the distance, $d$.
+The results show the higher order of polynomials are less than that of systematic errors. We need to place the mirror at least 2~m away from the mirror and use the sum of the first and second order equation to suppress the systematic error well below 1 \%.
+In the following calculations, we assume the $d= $~2~m. 
+The analytical calculation of the displacement of the test mass in Eq.(\ref{eq:EOM}) assumes that the rotor weights and the test mass can be approximated as point masses with negligibly small size.
+We compared results of the analytical calculation with the numerical integral of the displacements genarated by the actual dimension of the rotor 
+with the parameters shown Table.~\ref{sus} and confirmed that the analytical formula has the accuracy small enough at $d= $~2~m.
 
 \begin{table}
 \begin{center}
@@ -432,7 +440,9 @@ In order to achieve the precision less than 1 \%, we need to consider the operat
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{2f.eps}
-\caption{The 2-f displacement ratio of the higher order effect by changing $r/d$. Dotted curves are included with the first order term. Dashed curves are included with sum of first order and second order. Solid Curves are assumed with sum of first, second and third order teams. The analytical result is listed in Table~\ref{tab:N2}. To achieve the precision less than 1~\%, we need to include the higher order terms.}
+\caption{The ratio of Legendre polynomial approximation over the numerical calculation of $\frac{\partial V}{\partial{d}}$ and Eq.(~\ref{eq:vpot}) 
+on the test mass displacement for the quadrupole($N=2$) component as a function of the distance. The dotted, dashed and solid lines correspond to the first order only, up to the second orders, and up to the third orders, respectively.
+The analytical result is listed in Table~\ref{tab:N2}. To achieve the precision less than 1~\%, we need to include the higher order terms.}
 \label{fig:FEM-2f}
 \end{center}
 \end{figure}
@@ -440,7 +450,9 @@ In order to achieve the precision less than 1 \%, we need to consider the operat
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{3f.eps}
-\caption{The 3-f displacement ratio of the higher order effect by changing $r/d$. Same as Fig.~\ref{fig:FEM-2f} except for assuming Table~\ref{tab:N3}. }
+\caption{The ratio of Legendre polynomial approximation over the numerical calculation of $\frac{\partial V}{\partial{d}}$ and Eq.(~\ref{eq:vpot}) 
+on the test mass displacement for the hexapole($N=3$) component as a function of the distance. The dotted, dashed and solid lines correspond to the first order only, up to the second orders, and up to the third orders, respectively.
+The analytical result is listed in Table~\ref{tab:N3}. To achieve the precision less than 1~\%, we need to include the higher order terms.}
 \label{fig:FEM-3f}
 \end{center}
 \end{figure}
