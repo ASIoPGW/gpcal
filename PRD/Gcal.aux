@@ -5,7 +5,7 @@
 \citation{0264-9381-29-12-124007,PhysRevD.88.043007}
 \citation{PhysRevLett.119.161101}
 \citation{Abbott:2017xzu,Schutz_1986,Holz_2005,Nissanke_2010}
-\citation{GW170817:2017aa}
+\citation{PhysRevLett.119.161101}
 \citation{Feeney:2018mkj}
 \citation{Riess_2016}
 \citation{2016-planck}
@@ -40,6 +40,7 @@
 \newlabel{fig:dim}{{2}{3}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Configuration of the rotor with quadrupole and haxapole mass distributions. $m_{\mathrm  {q}}$ and $m_{\mathrm  {h}}$ are masses of quadrupole and hexapole. $r_{\mathrm  {q}}$ and $r_{\mathrm  {h}}$ are radiuses of quadrupole and hexapole.}}{3}{}}
 \newlabel{fig:hex}{{3}{3}{}{}{}}
+\newlabel{eq:vpot}{{5}{3}{}{}{}}
 \newlabel{eq:EOM}{{7}{3}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {A}Displacement of test mass (Quadrupole)}{3}{}}
 \newlabel{Quad}{{III\tmspace  +\thinmuskip {.1667em}A}{3}{}{}{}}
@@ -68,16 +69,16 @@
 \newlabel{tab:N2}{{III}{5}{}{}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces The calculated hexapole($N=3$) displacement. $n$ is order of Legendre polynomial, where $\omega =n\omega _{\mathrm  {rot}}$. }}{5}{}}
 \newlabel{tab:N3}{{IV}{5}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The 2-f displacement ratio of the higher order effect by changing $r/d$. Dotted curves are included with the first order term. Dashed curves are included with sum of first order and second order. Solid Curves are assumed with sum of first, second and third order teams. The analytical result is listed in Table\nobreakspace  {}III{}{}{}\relax . To achieve the precision less than 1\nobreakspace  {}\%, we need to include the higher order terms.}}{5}{}}
-\newlabel{fig:FEM-2f}{{5}{5}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The 3-f displacement ratio of the higher order effect by changing $r/d$. Same as Fig.\nobreakspace  {}5{}{}{}\relax  except for assuming Table\nobreakspace  {}IV{}{}{}\relax . }}{6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Systematic error of the transfer function}{5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The ratio of Legendre polynomial approximation over the numerical calculation of $\frac  {\partial V}{\partial {d}}$ and Eq.(\nobreakspace  {}5{}{}{}\relax ) on the test mass displacement for the quadrupole($N=2$) component as a function of the distance. The dotted, dashed and solid lines correspond to the first order only, up to the second orders, and up to the third orders, respectively. The analytical result is listed in Table\nobreakspace  {}III{}{}{}\relax . To achieve the precision less than 1\nobreakspace  {}\%, we need to include the higher order terms.}}{6}{}}
+\newlabel{fig:FEM-2f}{{5}{6}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The ratio of Legendre polynomial approximation over the numerical calculation of $\frac  {\partial V}{\partial {d}}$ and Eq.(\nobreakspace  {}5{}{}{}\relax ) on the test mass displacement for the hexapole($N=3$) component as a function of the distance. The dotted, dashed and solid lines correspond to the first order only, up to the second orders, and up to the third orders, respectively. The analytical result is listed in Table\nobreakspace  {}IV{}{}{}\relax . To achieve the precision less than 1\nobreakspace  {}\%, we need to include the higher order terms.}}{6}{}}
 \newlabel{fig:FEM-3f}{{6}{6}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B}Systematic error of the transfer function}{6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {C}Uncertainty of displacement and laser power}{6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Schematic view of the suspension system. The parameters of the heights and masses are the assumed values. }}{6}{}}
 \newlabel{fig:cryo}{{7}{6}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The displacement ratio of the transfer function of multi pendulum by changing modulation frequency, where relations of the modulation frequency, $f$, modulation angular frequency, $\omega $, and rotation angular frequency, $\omega _{\mathrm  {rot}}$ are described as. $n\omega _{\mathrm  {rot}}=\omega =2\pi f$. If we put the Gcal, it act the upper masses and it makes systematic error of the transfer function.}}{6}{}}
 \newlabel{fig:ratio}{{8}{6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}Uncertainty of displacement and laser power}{6}{}}
 \citation{CG6000}
 \citation{Inoue:16}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The response of $V_{\mathrm  {2f}}/V_{\mathrm  {3f}}$ by changing distance between test mass and Gcal.}}{7}{}}
@@ -85,7 +86,6 @@
 \newlabel{dP2f}{{30}{7}{}{}{}}
 \newlabel{dP3f}{{31}{7}{}{}{}}
 \newlabel{deltax}{{33}{7}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{7}{}}
 \citation{Riess_2016}
 \citation{2016-planck}
 \bibdata{GcalNotes,report}
@@ -93,7 +93,7 @@
 \bibcite{0264-9381-32-7-074001}{{2}{2015}{{Asai\ \emph  {et~al.}}}{{Asai \emph  {et~al.}}}}
 \bibcite{0264-9381-32-2-024001}{{3}{2015}{{Acernese\ \emph  {et~al.}}}{{Acernese \emph  {et~al.}}}}
 \bibcite{0264-9381-29-12-124007}{{4}{2012}{{Somiya}}{{}}}
-\bibcite{PhysRevD.88.043007}{{5}{2013}{{Aso\ \emph  {et~al.}}}{{Aso \emph  {et~al.}}}}
+\bibcite{PhysRevD.88.043007}{{5}{2013}{{Aso\ \emph  {et~al.}}}{{Aso, Michimura, Somiya, Ando, Miyakawa, Sekiguchi, Tatsumi,\ and\ Yamamoto}}}
 \bibcite{PhysRevLett.119.161101}{{6}{2017{}}{{Abbott\ \emph  {et~al.}}}{{Abbott \emph  {et~al.}}}}
 \bibcite{Abbott:2017xzu}{{7}{2017{}}{{Abbott\ \emph  {et~al.}}}{{Abbott \emph  {et~al.}}}}
 \bibcite{Schutz_1986}{{8}{1986}{{Schutz}}{{}}}
@@ -108,32 +108,31 @@
 \bibcite{0264-9381-27-8-084024}{{17}{2010}{{Goetz\ \emph  {et~al.}}}{{Goetz \emph  {et~al.}}}}
 \bibcite{0264-9381-26-24-245011}{{18}{2009}{{Goetz\ \emph  {et~al.}}}{{Goetz \emph  {et~al.}}}}
 \bibcite{EUROMET}{{19}{2009}{{Kuck}}{{}}}
-\bibcite{Note1}{{20}{}{{Note1}}{{}}}
-\citation{EUROMET}
-\bibcite{Note2}{{21}{}{{Note2}}{{}}}
-\citation{EUROMET}
-\bibcite{doi:10.1063/1.1709366}{{22}{1967}{{Forward\ and\ Miller}}{{}}}
-\bibcite{PhysRevLett.18.795}{{23}{1967}{{Sinsky\ and\ Weber}}{{}}}
-\bibcite{PhysRev.167.1145}{{24}{1968}{{Sinsky}}{{}}}
-\bibcite{Hirakawa}{{25}{1980}{{H.Hirakawa\ \emph  {et~al.}}}{{H.Hirakawa, K.Tsubono,\ and\ K.Oide}}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{8}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {}Acknowledgments}{8}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {}References}{8}{}}
-\bibcite{1347-4065-19-3-L123}{{26}{1980}{{Oide\ \emph  {et~al.}}}{{Oide, Tsubono,\ and\ Hirakawa}}}
-\bibcite{1347-4065-20-7-L498}{{27}{1981}{{Suzuki\ \emph  {et~al.}}}{{Suzuki \emph  {et~al.}}}}
-\bibcite{PhysRevD.26.729}{{28}{1982}{{Ogawa\ \emph  {et~al.}}}{{Ogawa, Tsubono,\ and\ Hirakawa}}}
-\bibcite{PhysRevD.32.342}{{29}{1985}{{Kuroda\ and\ Hirakawa}}{{}}}
-\bibcite{Astone1991}{{30}{1991}{{Astone\ \emph  {et~al.}}}{{Astone \emph  {et~al.}}}}
-\bibcite{0264-9381-24-9-005}{{31}{2007}{{Matone\ \emph  {et~al.}}}{{Matone \emph  {et~al.}}}}
-\bibcite{0264-9381-34-1-015002}{{32}{2017}{{Tuyenbayev\ \emph  {et~al.}}}{{Tuyenbayev \emph  {et~al.}}}}
-\bibcite{KAGRA_Pcal}{{33}{2018}{{Inoue\ \emph  {et~al.}}}{{Inoue \emph  {et~al.}}}}
-\bibcite{taylor:1994:GEEU}{{34}{1994}{{Taylor\ and\ Kuyatt}}{{}}}
-\bibcite{RevModPhys.88.035009}{{35}{2016}{{Mohr\ \emph  {et~al.}}}{{Mohr, Newell,\ and\ Taylor}}}
-\bibcite{0264-9381-34-22-225001}{{36}{2017}{{Michimura\ \emph  {et~al.}}}{{Michimura \emph  {et~al.}}}}
-\bibcite{SUMCON}{{37}{}{{SUMCON}}{{}}}
-\bibcite{CG6000}{{38}{}{{CG-6000}}{{}}}
-\bibcite{Inoue:16}{{39}{2016}{{Inoue\ \emph  {et~al.}}}{{Inoue \emph  {et~al.}}}}
+\bibcite{Note1}{{20}{}{{Note1}}{{}}}
+\citation{EUROMET}
+\bibcite{doi:10.1063/1.1709366}{{21}{1967}{{Forward\ and\ Miller}}{{}}}
+\bibcite{PhysRevLett.18.795}{{22}{1967}{{Sinsky\ and\ Weber}}{{}}}
+\bibcite{PhysRev.167.1145}{{23}{1968}{{Sinsky}}{{}}}
+\bibcite{Hirakawa}{{24}{1980}{{H.Hirakawa\ \emph  {et~al.}}}{{H.Hirakawa, K.Tsubono,\ and\ K.Oide}}}
+\bibcite{1347-4065-19-3-L123}{{25}{1980}{{Oide\ \emph  {et~al.}}}{{Oide, Tsubono,\ and\ Hirakawa}}}
+\bibcite{1347-4065-20-7-L498}{{26}{1981}{{Suzuki\ \emph  {et~al.}}}{{Suzuki \emph  {et~al.}}}}
+\bibcite{PhysRevD.26.729}{{27}{1982}{{Ogawa\ \emph  {et~al.}}}{{Ogawa, Tsubono,\ and\ Hirakawa}}}
+\bibcite{PhysRevD.32.342}{{28}{1985}{{Kuroda\ and\ Hirakawa}}{{}}}
+\bibcite{Astone1991}{{29}{1991}{{Astone\ \emph  {et~al.}}}{{Astone \emph  {et~al.}}}}
+\bibcite{0264-9381-24-9-005}{{30}{2007}{{Matone\ \emph  {et~al.}}}{{Matone \emph  {et~al.}}}}
+\bibcite{0264-9381-34-1-015002}{{31}{2017}{{Tuyenbayev\ \emph  {et~al.}}}{{Tuyenbayev \emph  {et~al.}}}}
+\bibcite{KAGRA_Pcal}{{32}{2018}{{Inoue\ \emph  {et~al.}}}{{Inoue \emph  {et~al.}}}}
+\bibcite{taylor:1994:GEEU}{{33}{1994}{{Taylor\ and\ Kuyatt}}{{}}}
+\bibcite{RevModPhys.88.035009}{{34}{2016}{{Mohr\ \emph  {et~al.}}}{{Mohr, Newell,\ and\ Taylor}}}
+\bibcite{0264-9381-34-22-225001}{{35}{2017}{{Michimura\ \emph  {et~al.}}}{{Michimura \emph  {et~al.}}}}
+\bibcite{SUMCON}{{36}{}{{SUMCON}}{{}}}
+\bibcite{CG6000}{{37}{}{{CG-6000}}{{}}}
+\bibcite{Inoue:16}{{38}{2016}{{Inoue\ \emph  {et~al.}}}{{Inoue \emph  {et~al.}}}}
 \bibstyle{apsrev4-1}
 \citation{REVTEX41Control}
 \citation{apsrev41Control}
-\newlabel{LastBibItem}{{39}{9}{}{}{}}
+\newlabel{LastBibItem}{{38}{9}{}{}{}}
 \newlabel{LastPage}{{}{9}{}{}{}}

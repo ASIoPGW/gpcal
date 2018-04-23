@@ -59,13 +59,10 @@ superscriptaddress,
 
 %\preprint{APS/123-QED}
 
-<<<<<<< HEAD
-\title{Improving the absolute accuracy of the gravitational wave detectors by combining the photon pressure and gravity field calibrators}% Force line breaks with \\
-=======
 %\title{Absolute calibration of gravitational wave detector using gravity field and photon pressure}% Force line breaks with \\
 
 \title{Improving the absolute accuracy of the gravitational wave detectors by combining the photon pressure and gravity field calibrators}
->>>>>>> 2d22f66a5b50aae42d75d5f1d2df9b2f807aa850
+
 %\thanks{A footnote to the article title}%
 \author{Yuki Inoue}
 \author{Sadakazu Haino}
@@ -75,14 +72,14 @@ superscriptaddress,
 \affiliation{Department of Physics, Graduate School of Science, Osaka City University, Osaka 558-8585, Japan}
 \author{Yujiro Ogawa}
 \affiliation{High Energy Accelerator Research Organization (KEK), Ibaraki 305-0801, Japan}
-\affiliation{The Graduate University for Advanced Studies), Hayama, Miura District, Kanagawa 240-0115, Japan}
+\affiliation{SOKENDAI(The Graduate University for Advanced Studies), Hayama, Miura District, Kanagawa 240-0115, Japan}
 \author{Toshikazu Suzuki}
 \affiliation{High Energy Accelerator Research Organization (KEK), Ibaraki 305-0801, Japan}
 \affiliation{Kavli Institute for the Physics and Mathematics of the Universe (Kavli IPMU), The University of Tokyo, Chiba 277-8568, Japan}
 \affiliation{Institute for Cosmic Ray Research, The University of Tokyo, Chiba 277-8582, Japan}
 \author{Takayuki Tomaru}
 \affiliation{High Energy Accelerator Research Organization (KEK), Ibaraki 305-0801, Japan}
-\affiliation{The Graduate University for Advanced Studies), Hayama, Miura District, Kanagawa 240-0115, Japan}
+\affiliation{SOKENDAI(The Graduate University for Advanced Studies), Hayama, Miura District, Kanagawa 240-0115, Japan}
 \affiliation{Kavli Institute for the Physics and Mathematics of the Universe (Kavli IPMU), The University of Tokyo, Chiba 277-8568, Japan}
 \affiliation{Institute for Cosmic Ray Research, The University of Tokyo, Chiba 277-8582, Japan}
 \author{Takahiro Yamanmoto}
@@ -133,7 +130,7 @@ The current technological limit of the absolute calibration uncertainty on the g
 
 %Overview of GW observation
 The discovery of the gravitational wave (GW) gave us the new probe for observing our universe~\cite{PhysRevLett.116.061102}. 
-The typical strain sensitivity, $h$, of 2nd generation interferometric detectors (IFO), such as Advanced LIGO~\cite{0264-9381-32-7-074001}, Advanced Virgo~\cite{0264-9381-32-2-024001}, and KAGRA~\cite{0264-9381-29-12-124007, PhysRevD.88.043007}, are around $10^{-23}/\sqrt{\mathrm{Hz}}$ at 100 Hz. 
+The typical strain sensitivity, $h$, of second generation interferometric detectors (IFO), such as Advanced LIGO~\cite{0264-9381-32-7-074001}, Advanced Virgo~\cite{0264-9381-32-2-024001}, and KAGRA~\cite{0264-9381-29-12-124007, PhysRevD.88.043007}, are around $10^{-23}/\sqrt{\mathrm{Hz}}$ at 100 Hz. 
 % Added by SH 180412
 By using the GW signals from compact binary coalescences, we can derive 
 the parameters such as masses, spins, luminosity distance, orbital inclination 
@@ -396,7 +393,7 @@ $1+\frac{I}{M}\vec{a}\cdot \vec{b}$& 1&0.3~\% \\
 
 \subsection{Systematic error of higher order term}
 In order to achieve the precision less than 1 \%, we need to consider the operation position due to the higher order of Legendre polynomials. This is because that higher order also include the 2-f and 3-f components. The $n$-th order of the Legendre polynomial is calculated in Eq.(\ref{eq:EOM}). The effect of higher order factor is mitigated by the factor of $(r/d)^n$. Table~\ref{tab:N2} and \ref{tab:N3} show the calculated displacements of the higher order terms.
-To investigate the higher order effect, we compare the estimated test mass displacement between the Legendre polynomial approximation and the numerical calculation of $\frac{\partial V}{\partial{d}}$ and Eq.(~\ref{eq:vpot}). The ratio of two calculations on the test mass displacement is shown in Fig~\ref{fig:FEM-2f} and ~\ref{fig:FEM-3f} for quadrupole($N=2$) and hexapole($N=3$) components, respectively, as a function of the distance, $d$.
+To investigate the higher order effect, we compare the estimated test mass displacement between the Legendre polynomial approximation and the numerical calculation of $\frac{\partial V}{\partial{d}}$ and Eq.(\ref{eq:vpot}). The ratio of two calculations on the test mass displacement is shown in Fig~\ref{fig:FEM-2f} and ~\ref{fig:FEM-3f} for quadrupole ($N=2$) and hexapole ($N=3$) components, respectively, as a function of the distance, $d$.
 The results show the higher order of polynomials are less than that of systematic errors. We need to place the mirror at least 2~m away from the mirror and use the sum of the first and second order equation to suppress the systematic error well below 1 \%.
 In the following calculations, we assume the $d= $~2~m. 
 The analytical calculation of the displacement of the test mass in Eq.(\ref{eq:EOM}) assumes that the rotor weights and the test mass can be approximated as point masses with negligibly small size.
@@ -548,9 +545,9 @@ where $\delta P_{\mathrm{sys}}/P_{\mathrm{sys}}$ is the relative systematic erro
 &+&\frac{12}{\sqrt{6}} \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} +\frac{10}{2} \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}}  +\frac{5}{2} \frac{\delta m_{\mathrm{q}}}{m_{\mathrm{q}}} +\!\frac{4}{\sqrt{6}}  \! \frac{\delta m_{\mathrm{h}}}{m_{\mathrm{h}}}.
 \end{eqnarray}
  We consider the mitigation effect of the masses and radiuses due to the tolerance and uncertainty of the measurement instruments. The values of masses and radiuses have a variance due to the fabrication tolerance. The errors of $m_{\mathrm{q}}$, $r_{\mathrm{q}}$, $m_{\mathrm{h}}$, and $r_{\mathrm{h}}$ are mitigated by the factor of $1/\sqrt{6}$ and $1/\sqrt{4}$. 
-The uncertainty of the quadrupole and hexapole masses are limited by the accuracy of  an electronic balance. In this case, we use the masses made of Tungsten. The density of Tungsten is $19.25~\mathrm{g/cm^3}$. The diameter and thickness of the mass are 0.06~m and 0.08~m, respectively. Therefore, the mass of the rotor mass is 4.485~kg. To measure this mass, we assumed that we use an electronic balance whose catalog number and accuracy are CG-6000 and 0.2~g, respectively~\cite{CG6000}. Therefore, the relative uncertainty of the mass of rotor mass is 0.04~\%.
+The uncertainty of the quadrupole and hexapole masses are limited by the accuracy of  an electronic balance. In this case, we use the masses made of Tungsten. The density of Tungsten is $19.25~\mathrm{g/cm^3}$. The diameter and thickness of the mass are 0.06~m and 0.08~m, respectively. Therefore, the mass of the rotor mass is 4.485~kg. To measure this mass, we assumed that we use an electronic balance whose catalog number and accuracy are CG-6000 and 0.2~g, respectively~\cite{CG6000}. Therefore, the relative uncertainty of the mass of rotor mass is 0.004~\%.
 
- To make the rotor disk, we use the NC milling machine. The typical accuracy is less than 0.02 mm. For the measuring of the shape, we employ the three-dimension coordinate measuring machine (CMM)~\cite{Inoue:16}. The precision of CMM is $2~\mathrm{\mu m}$. We can measure the shape of the rotor and masses with enough of uncertainty using CMM. 
+ To make the rotor disk, we use the NC milling machine. The typical accuracy is less than 0.02~mm. For the measuring of the shape, we employ the three-dimension coordinate measuring machine (CMM)~\cite{Inoue:16}. The precision of CMM is $2~\mathrm{\mu m}$. We can measure the shape of the rotor and masses with enough of uncertainty using CMM. 
 
 The estimated relative uncertainties of the powers are 0.52~\%. One of the largest uncertainties is the geometrical factor of the Pcal laser. The geometrical factor uncertainty is assumed 0.3 \%, which is the same number of Advanced LIGO. 
 

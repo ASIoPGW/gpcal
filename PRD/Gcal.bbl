@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{39}%
+\begin{thebibliography}{38}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -84,14 +84,23 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Classical and Quantum Gravity}\
   }\textbf {\bibinfo {volume} {29}},\ \bibinfo {pages} {124007} (\bibinfo
   {year} {2012})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Aso}\ \emph {et~al.}(2013)\citenamefont {Aso} \emph
-  {et~al.}}]{PhysRevD.88.043007}%
+\bibitem [{\citenamefont {Aso}\ \emph {et~al.}(2013)\citenamefont {Aso},
+  \citenamefont {Michimura}, \citenamefont {Somiya}, \citenamefont {Ando},
+  \citenamefont {Miyakawa}, \citenamefont {Sekiguchi}, \citenamefont
+  {Tatsumi},\ and\ \citenamefont {Yamamoto}}]{PhysRevD.88.043007}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
-  {Aso}} \emph {et~al.} (\bibinfo {collaboration} {The KAGRA Collaboration}),\
-  }\href {\doibase 10.1103/PhysRevD.88.043007} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo
-  {pages} {043007} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+  {Aso}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Michimura}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Somiya}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Ando}}, \bibinfo {author}
+  {\bibfnamefont {O.}~\bibnamefont {Miyakawa}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Sekiguchi}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Tatsumi}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {H.}~\bibnamefont {Yamamoto}} (\bibinfo {collaboration} {The
+  KAGRA Collaboration}),\ }\href {\doibase 10.1103/PhysRevD.88.043007}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo
+  {volume} {88}},\ \bibinfo {pages} {043007} (\bibinfo {year}
+  {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Abbott}\ \emph
   {et~al.}(2017{\natexlab{a}})\citenamefont {Abbott} \emph
   {et~al.}}]{PhysRevLett.119.161101}%
@@ -211,11 +220,6 @@
   Comparison Project}\ }\textbf {\bibinfo {volume} {156}},\ \bibinfo {pages}
   {EUROMET.PR} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
 \bibitem [{Note1()}]{Note1}%
-  \BibitemOpen
-  \bibinfo {note} {Figure. 9 at page 46. from \cite {EUROMET} shows the
-  absolute power measurement between the standard institute from nine
-  countries.}\BibitemShut {Stop}%
-\bibitem [{Note2()}]{Note2}%
   \BibitemOpen
   \bibinfo {note} {Figure. 9 at page 46. from \cite {EUROMET} shows the
   absolute power measurement between the standard institute from nine
