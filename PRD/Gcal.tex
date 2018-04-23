@@ -513,6 +513,15 @@ By using this result, we estimate the SNR of the peaks.
 \end{eqnarray}
 \normalsize
 where $T$ is integration time. When we integrate the signal larger than 3 min, we can measure the $V^{\mathrm{R}}_{2f}$ and $V^{\mathrm{R}}_{3f}$ with SNR large enough such that systematic error can be reduced less than 0.1~\%. 
+The estimated $V^{\mathrm{T}}_{\mathrm{2f}}/V^{T}_{\mathrm{3f}}$ by changing distance are shown in Fig.~\ref{fig:dvsVV}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{dvsVV.eps}
+\caption{The response of $V_{\mathrm{2f}}/V_{\mathrm{3f}}$ by changing distance between test mass and Gcal.}
+\label{fig:dvsVV}
+\end{center}
+\end{figure}
+
 This method is applicable to the measurement of the absolute laser power. The estimated powers are
 \footnotesize
 \begin{eqnarray}
@@ -522,15 +531,7 @@ P_{\mathrm{3f}}&=&0.0038~\mathrm{[W]} \times \left( \frac{G}{6.6742 \times 10^{-
 && \times \left( \frac{m_{\mathrm{h}}}{4.485 \mathrm{[kg]}} \right) \times \left( \frac{r_{\mathrm{h}}}{0.125 \mathrm{[m]}} \right)^3 \times \left( \frac{2\mathrm{[m]}}{d} \right)^5 \nonumber \\ &&\times \left( \frac{1}{\cos{\theta}} \right) \times \left( \frac{1}{1+\frac{M}{I}\vec{a}\cdot \vec{b}} \right)^2.
 \end{eqnarray}
 \normalsize
-The estimated $V^{\mathrm{T}}_{\mathrm{2f}}/V^{T}_{\mathrm{3f}}$ by changing distance are shown in Fig.~\ref{fig:dvsVV}.
-\begin{figure}
-\begin{center}
-\includegraphics[width=8cm]{dvsVV.eps}
-\caption{The response of $V_{\mathrm{2f}}/V_{\mathrm{3f}}$ by changing distance between test mass and Gcal.}
-\label{fig:dvsVV}
-\end{center}
-\end{figure}
-We  estimate the laser power by using the following equations:
+We estimate the laser power by using the following equations:
 \footnotesize
 \begin{eqnarray}
 \left( \frac{\delta P_{\mathrm{2f}}}{P_{\mathrm{2f}}} \right)^2 &\sim&  \!16 \! \left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}} \!\right)^2+16\left( \frac{\delta V^{\mathrm{R}}_{{\mathrm{3f}}}}{V^{\mathrm{R}}_{{\mathrm{3f}}}} \right)^2 +\left( \frac{\delta P_{\mathrm{sys}}}{P_{\mathrm{sys}}} \right)^2, \label{dP2f} \\ 
@@ -549,13 +550,13 @@ The uncertainty of the quadrupole and hexapole masses are limited by the accurac
 
 The estimated relative uncertainties of the powers are 0.52~\%. One of the largest uncertainties is the geometrical factor of the Pcal laser. The geometrical factor uncertainty is assumed 0.3 \%, which is the same number of Advanced LIGO. 
 
- Finally, the estimated relative uncertainty of the displacement is written as
+Finally, assuming that $V_{in}$, $s(\omega)$, $V^{\mathrm{R}}_{{\mathrm{2f}}}$, and $V^{\mathrm{R}}_{{\mathrm{3f}}}$ have independent statistical fluctuations for each measurement and therefore can be added in quadrature, the estimated relative uncertainty of the displacement is written as
  \footnotesize
 \begin{equation}
 \left( \frac{\delta x}{x} \right)^2 \!\sim \! \left( \!\frac{\delta V_{in}}{V_{in}}\! \right)^2+\left(\! \frac{\delta s(\omega)}{s(\omega)} \! \right)^2\!+\!25\!\left(\!\frac{\delta V^{\mathrm{R}}_{{\mathrm{2f}}}}{V^{\mathrm{R}}_{{\mathrm{2f}}}}\! \right)^2+16\!\left(\! \frac{\delta V^{\mathrm{R}}_{{\mathrm{3f}}}}{V^{\mathrm{R}}_{{\mathrm{3f}}}}\! \right)^2\!+ \left(\! \frac{\delta x_{\mathrm{sys}}}{x_{\mathrm{sys}}} \! \right)^2 \label{deltax},
 \end{equation}
 \normalsize
-where $\delta x_{\mathrm{sys}}/x_{\mathrm{sys}}$ is the relative systematic error of the displacement. This factor is written by
+where $\delta x_{\mathrm{sys}}/x_{\mathrm{sys}}$ is the relative systematic error of the displacement which cannot be added in quadrature. This factor is written by
  \footnotesize
 \begin{equation}
 \frac{\delta x_{\mathrm{sys}}}{x_{\mathrm{sys}}}=\frac{\delta G}{G} + \frac{\delta M}{M} +\frac{12}{\sqrt{6}} \frac{\delta r_{\mathrm{h}}}{r_{\mathrm{h}}} +\frac{10}{2} \frac{\delta r_{\mathrm{q}}}{r_{\mathrm{q}}}  +\frac{5}{2} \frac{\delta m_{\mathrm{q}}}{m_{\mathrm{q}}} +\!\frac{4}{\sqrt{6}}  \! \frac{\delta m_{\mathrm{h}}}{m_{\mathrm{h}}}.
