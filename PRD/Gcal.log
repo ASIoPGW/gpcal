@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  23 APR 2018 07:01
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  23 APR 2018 08:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,59 +283,47 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 Package natbib Warning: Citation `GW170817:2017aa' on page 1 undefined on input
  line 150.
 
-
-Package natbib Warning: Citation `Note3' on page 1 undefined on input line 178.
-
-
 [1]
 File: Pcal.eps Graphic file (type eps)
  <Pcal.eps>
-Overfull \hbox (7.01314pt too wide) in paragraph at lines 222--237
+Overfull \hbox (7.01314pt too wide) in paragraph at lines 215--230
  []$ 
  []
 
 [2]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 250.
+ on input line 243.
 
 File: dim.eps Graphic file (type eps)
 <dim.eps>
 File: Hexapole.eps Graphic file (type eps)
  <Hexapole.eps>
-Underfull \hbox (badness 1454) in paragraph at lines 291--291
+Underfull \hbox (badness 1454) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 quadrupole and hexapole. $\OML/cmm/m/it/9 r[]$ \OT1/cmr/m/n/9 an
 d $\OML/cmm/m/it/9 r[]$ \OT1/cmr/m/n/9 are ra-diuses of
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 297--300
+Underfull \hbox (badness 1147) in paragraph at lines 290--293
 []\OT1/cmr/m/n/10 We cal-cu-late the dis-place-ment of the quadrupole
  []
 
 [3]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 300.
-
 File: IFO.eps Graphic file (type eps)
-<IFO.eps>
-Underfull \hbox (badness 3250) in paragraph at lines 359--371
+ <IFO.eps>
+Underfull \hbox (badness 3250) in paragraph at lines 352--364
 \OT1/cmr/m/n/10 am-pli-tude of the in-put volt-age. The fac-tor of
  []
 
 [4]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 371.
-
 File: 2f.eps Graphic file (type eps)
-<2f.eps>
+ <2f.eps>
 File: 3f.eps Graphic file (type eps)
  <3f.eps> [5]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 461.
+ on input line 454.
 
 File: Cryo.eps Graphic file (type eps)
 <Cryo.eps>
@@ -343,7 +331,7 @@ File: dx_Gcal_ratio.eps Graphic file (type eps)
  <dx_Gcal_ratio.eps> [6]
 File: dvsVV.eps Graphic file (type eps)
  <dvsVV.eps>
-Overfull \hbox (5.96576pt too wide) detected at line 551
+Overfull \hbox (5.96576pt too wide) detected at line 544
 [][]  \OMS/cmsy/m/n/8 ^^X  [][] \OT1/cmr/m/n/8 + [][]  +  25  [][] + 16  [][]  
 + [][] \OML/cmm/m/it/8 ;
  []
@@ -357,13 +345,13 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 58.
 
-[8]
+
 Underfull \hbox (badness 1009) in paragraph at lines 253--258
  []\OT1/cmr/m/n/9 H.Hirakawa, K.Tsubono,  and K.Oide, Na-ture \OT1/cmr/bx/n/9 2
 83
  []
 
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 354--359
  []\OT1/cmr/m/n/9 SUMCON, https://gwdoc.icrr.u-tokyo.ac.jp/cgi-
  []
@@ -378,12 +366,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3830 strings out of 493693
- 48762 string characters out of 6149787
- 145621 words of memory out of 5000000
- 7336 multiletter control sequences out of 15000+600000
+ 3828 strings out of 493693
+ 48745 string characters out of 6149787
+ 143913 words of memory out of 5000000
+ 7334 multiletter control sequences out of 15000+600000
  22184 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  34i,10n,29p,1085b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Gcal.dvi (9 pages, 67400 bytes).
+Output written on Gcal.dvi (9 pages, 65324 bytes).
